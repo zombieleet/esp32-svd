@@ -7,12 +7,14 @@ all: $(patsubst %,svd/%.svd,$(CHIPS))
 # esp32c6-lp copies PMU from the patched esp32c6 SVD.
 svd/esp32c6-lp.svd: svd/esp32c6.svd
 
-svd/%.svd: FORCE
+svd/%.svd: patch
 	@mkdir -p svd
 	$(SVDTOOLS) patch esp-pacs/$*/svd/patches/$*.yaml
 	mv esp-pacs/$*/svd/$*.base.svd.patched esp-pacs/$*/svd/$*.svd
 	cp esp-pacs/$*/svd/$*.svd $@
 
-FORCE:
+# Apply changes to .yaml files.
+patch:
+	go run patch.go
 
-.PHONY: all FORCE
+.PHONY: all patch

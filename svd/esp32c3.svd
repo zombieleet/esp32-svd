@@ -12136,6 +12136,7 @@
         <cluster>
           <dim>2</dim>
           <dimIncrement>0x40</dimIncrement>
+          <dimIndex>0-1</dimIndex>
           <name>FILTER_BANK%s</name>
           <description> Filter banks for frame reception. Bank zero is for the BSSID and bank one for the RA. Each filter bank has registers for four interfaces. </description>
           <addressOffset>0x0</addressOffset>
@@ -12518,6 +12519,7 @@
         <cluster>
           <dim>5</dim>
           <dimIncrement>0x8</dimIncrement>
+          <dimIndex>0-4</dimIndex>
           <name>TX_SLOT_CONFIG%s</name>
           <description>Used to configure the TX slot.</description>
           <addressOffset>0xCE4</addressOffset>
@@ -12695,6 +12697,7 @@
         <cluster>
           <dim>25</dim>
           <dimIncrement>0x28</dimIncrement>
+          <dimIndex>0-24</dimIndex>
           <name>CRYPTO_KEY_SLOT%s</name>
           <description>Cryptographic keys for MPDU encapsulation and decapsulation</description>
           <addressOffset>0x1400</addressOffset>

@@ -21,7 +21,7 @@ Please do not contribute changes directly to the SVD files in this repository. I
 
  1. Make sure the esp-pacs submodule is pulled, using `git submodule update --init`.
  2. Download the latest patches by going to the esp-pacs subdirectory and running `git pull`.
- 3. Run `make`.
+ 3. Run `make`. This first runs `go run patch.go`, which adds a `dimIndex` to the Wi-Fi clusters in esp-pacs so gen-device-svd can name them. Check `git -C esp-pacs diff` to ensure the modifications look plausible.
 
 Please ensure that the ESP targets supported by TinyGo can still be built:
 
