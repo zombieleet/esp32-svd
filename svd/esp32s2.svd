@@ -1278,10 +1278,13 @@ alternate-channel scan mode.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>CTRL_DATE</name>
           <description>Version control register</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -2517,10 +2520,13 @@ alternate-channel scan mode.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0xE20</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -4313,10 +4319,13 @@ alternate-channel scan mode.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register.</description>
           <addressOffset>0x1FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -6669,10 +6678,13 @@ alternate-channel scan mode.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>PRO_EXTMEM_REG_DATE</name>
           <description>register description</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -7366,10 +7378,13 @@ alternate-channel scan mode.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>REG_DATE</name>
           <description>Version control register</description>
           <addressOffset>0x6FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -7446,10 +7461,13 @@ alternate-channel scan mode.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>VERSION</name>
           <description>Version control register</description>
           <addressOffset>0x28</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -7788,10 +7806,13 @@ alternate-channel scan mode.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0xF8</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -8145,10 +8166,13 @@ alternate-channel scan mode.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Crypto DMA version control register</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <name>INT_RAW</name>
@@ -10000,10 +10024,13 @@ The value refreshes when an I2C_TXFIFO_OVF_INT or I2C_TRANS_COMPLETE_INT interru
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0xF8</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -11851,10 +11878,13 @@ The value refreshes when an I2C_TXFIFO_OVF_INT or I2C_TRANS_COMPLETE_INT interru
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -12030,10 +12060,13 @@ The value refreshes when an I2C_TXFIFO_OVF_INT or I2C_TRANS_COMPLETE_INT interru
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>REG_DATE</name>
           <description>Version control register</description>
           <addressOffset>0xFFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -12650,10 +12683,13 @@ The value refreshes when an I2C_TXFIFO_OVF_INT or I2C_TRANS_COMPLETE_INT interru
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Copy DMA version control register</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -12801,10 +12837,13 @@ The value refreshes when an I2C_TXFIFO_OVF_INT or I2C_TRANS_COMPLETE_INT interru
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -13251,10 +13290,13 @@ The value refreshes when an I2C_TXFIFO_OVF_INT or I2C_TRANS_COMPLETE_INT interru
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -13637,10 +13679,13 @@ Any pulses with width less than this will be ignored when the filter is enabled.
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>PCNT version control register</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -15546,10 +15591,13 @@ Any pulses with width less than this will be ignored when the filter is enabled.
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register.</description>
           <addressOffset>0xFFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -16297,10 +16345,13 @@ Any pulses with width less than this will be ignored when the filter is enabled.
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>RMT version register</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -16557,10 +16608,13 @@ Any pulses with width less than this will be ignored when the filter is enabled.
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0x830</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -16902,15 +16956,149 @@ Any pulses with width less than this will be ignored when the filter is enabled.
             </field>
           </fields>
         </register>
-        <register derivedFrom="RTC_PAD19">
+        <register>
           <name>XTAL_32P_PAD</name>
           <description>32KHz crystal P-pad configuration register</description>
           <addressOffset>0xC0</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x50000000</resetValue>
+          <fields>
+            <field>
+              <name>FUN_IE</name>
+              <description>Input enable in normal execution.</description>
+              <bitOffset>13</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>SLP_OE</name>
+              <description>Output enable in sleep mode.</description>
+              <bitOffset>14</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>SLP_IE</name>
+              <description>Input enable in sleep mode.</description>
+              <bitOffset>15</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>SLP_SEL</name>
+              <description>1: enable sleep mode. 0: no sleep mode</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>FUN_SEL</name>
+              <description>Function selection.</description>
+              <bitOffset>17</bitOffset>
+              <bitWidth>2</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>MUX_SEL</name>
+              <description>1: use RTC GPIO. 0: use digital GPIO.</description>
+              <bitOffset>19</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>RUE</name>
+              <description>Pull-down enable of the pad. 1: internal pull-down enabled. 0: internal pull-down disabled.</description>
+              <bitOffset>27</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>RDE</name>
+              <description>Pull-up enable of the pad. 1: internal pull-up enabled. 0: internal pull-up disabled.</description>
+              <bitOffset>28</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>DRV</name>
+              <description>Select the drive strength of the pad. 0: ~5 mA. 1: ~10 mA. 2: ~20 mA. 3: ~40 mA.</description>
+              <bitOffset>29</bitOffset>
+              <bitWidth>2</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="RTC_PAD19">
+        <register>
           <name>XTAL_32N_PAD</name>
           <description>32KHz crystal N-pad configuration register</description>
           <addressOffset>0xC4</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x50000000</resetValue>
+          <fields>
+            <field>
+              <name>FUN_IE</name>
+              <description>Input enable in normal execution.</description>
+              <bitOffset>13</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>SLP_OE</name>
+              <description>Output enable in sleep mode.</description>
+              <bitOffset>14</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>SLP_IE</name>
+              <description>Input enable in sleep mode.</description>
+              <bitOffset>15</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>SLP_SEL</name>
+              <description>1: enable sleep mode. 0: no sleep mode</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>FUN_SEL</name>
+              <description>Function selection.</description>
+              <bitOffset>17</bitOffset>
+              <bitWidth>2</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>MUX_SEL</name>
+              <description>1: use RTC GPIO. 0: use digital GPIO.</description>
+              <bitOffset>19</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>RUE</name>
+              <description>Pull-down enable of the pad. 1: internal pull-down enabled. 0: internal pull-down disabled.</description>
+              <bitOffset>27</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>RDE</name>
+              <description>Pull-up enable of the pad. 1: internal pull-up enabled. 0: internal pull-up disabled.</description>
+              <bitOffset>28</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>DRV</name>
+              <description>Select the drive strength of the pad. 0: ~5 mA. 1: ~10 mA. 2: ~20 mA. 3: ~40 mA.</description>
+              <bitOffset>29</bitOffset>
+              <bitWidth>2</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
         <register>
           <dim>2</dim>
@@ -17080,15 +17268,149 @@ Any pulses with width less than this will be ignored when the filter is enabled.
             </field>
           </fields>
         </register>
-        <register derivedFrom="RTC_PAD19">
+        <register>
           <name>RTC_PAD20</name>
           <description>Touch pad 20 configuration register</description>
           <addressOffset>0xD4</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x50000000</resetValue>
+          <fields>
+            <field>
+              <name>FUN_IE</name>
+              <description>Input enable in normal execution.</description>
+              <bitOffset>13</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>SLP_OE</name>
+              <description>Output enable in sleep mode.</description>
+              <bitOffset>14</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>SLP_IE</name>
+              <description>Input enable in sleep mode.</description>
+              <bitOffset>15</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>SLP_SEL</name>
+              <description>1: enable sleep mode. 0: no sleep mode</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>FUN_SEL</name>
+              <description>Function selection.</description>
+              <bitOffset>17</bitOffset>
+              <bitWidth>2</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>MUX_SEL</name>
+              <description>1: use RTC GPIO. 0: use digital GPIO.</description>
+              <bitOffset>19</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>RUE</name>
+              <description>Pull-down enable of the pad. 1: internal pull-down enabled. 0: internal pull-down disabled.</description>
+              <bitOffset>27</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>RDE</name>
+              <description>Pull-up enable of the pad. 1: internal pull-up enabled. 0: internal pull-up disabled.</description>
+              <bitOffset>28</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>DRV</name>
+              <description>Select the drive strength of the pad. 0: ~5 mA. 1: ~10 mA. 2: ~20 mA. 3: ~40 mA.</description>
+              <bitOffset>29</bitOffset>
+              <bitWidth>2</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="RTC_PAD19">
+        <register>
           <name>RTC_PAD21</name>
           <description>Touch pad 21 configuration register</description>
           <addressOffset>0xD8</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x50000000</resetValue>
+          <fields>
+            <field>
+              <name>FUN_IE</name>
+              <description>Input enable in normal execution.</description>
+              <bitOffset>13</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>SLP_OE</name>
+              <description>Output enable in sleep mode.</description>
+              <bitOffset>14</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>SLP_IE</name>
+              <description>Input enable in sleep mode.</description>
+              <bitOffset>15</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>SLP_SEL</name>
+              <description>1: enable sleep mode. 0: no sleep mode</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>FUN_SEL</name>
+              <description>Function selection.</description>
+              <bitOffset>17</bitOffset>
+              <bitWidth>2</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>MUX_SEL</name>
+              <description>1: use RTC GPIO. 0: use digital GPIO.</description>
+              <bitOffset>19</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>RUE</name>
+              <description>Pull-down enable of the pad. 1: internal pull-down enabled. 0: internal pull-down disabled.</description>
+              <bitOffset>27</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>RDE</name>
+              <description>Pull-up enable of the pad. 1: internal pull-up enabled. 0: internal pull-up disabled.</description>
+              <bitOffset>28</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>DRV</name>
+              <description>Select the drive strength of the pad. 0: ~5 mA. 1: ~10 mA. 2: ~20 mA. 3: ~40 mA.</description>
+              <bitOffset>29</bitOffset>
+              <bitWidth>2</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
         <register>
           <name>EXT_WAKEUP0</name>
@@ -17169,10 +17491,13 @@ Any pulses with width less than this will be ignored when the filter is enabled.
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>RTC_IO_DATE</name>
           <description>Version control register</description>
           <addressOffset>0x1FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -18463,20 +18788,50 @@ Any pulses with width less than this will be ignored when the filter is enabled.
             </field>
           </fields>
         </register>
-        <register derivedFrom="STORE0">
+        <register>
           <name>STORE1</name>
           <description>Reservation register 1</description>
           <addressOffset>0x54</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>DATA</name>
+              <description>Reservation register 0</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="STORE0">
+        <register>
           <name>STORE2</name>
           <description>Reservation register 2</description>
           <addressOffset>0x58</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>DATA</name>
+              <description>Reservation register 0</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="STORE0">
+        <register>
           <name>STORE3</name>
           <description>Reservation register 3</description>
           <addressOffset>0x5C</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>DATA</name>
+              <description>Reservation register 0</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
         <register>
           <name>EXT_XTL_CONF</name>
@@ -19966,25 +20321,65 @@ Any pulses with width less than this will be ignored when the filter is enabled.
             </field>
           </fields>
         </register>
-        <register derivedFrom="STORE0">
+        <register>
           <name>STORE4</name>
           <description>Reservation register 4</description>
           <addressOffset>0xBC</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>DATA</name>
+              <description>Reservation register 0</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="STORE0">
+        <register>
           <name>STORE5</name>
           <description>Reservation register 5</description>
           <addressOffset>0xC0</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>DATA</name>
+              <description>Reservation register 0</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="STORE0">
+        <register>
           <name>STORE6</name>
           <description>Reservation register 6</description>
           <addressOffset>0xC4</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>DATA</name>
+              <description>Reservation register 0</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="STORE0">
+        <register>
           <name>STORE7</name>
           <description>Reservation register 7</description>
           <addressOffset>0xC8</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>DATA</name>
+              <description>Reservation register 0</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
         <register>
           <name>LOW_POWER_ST</name>
@@ -21277,9 +21672,13 @@ proximity mode. Range: 0 – 255.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
+          <description>Version control register</description>
           <addressOffset>0x138</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -21918,10 +22317,13 @@ I2C_COMD0_REG in Chapter I²C Controller</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -23676,10 +24078,13 @@ I2C_COMD0_REG in Chapter I²C Controller</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0x2C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <dim>16</dim>
@@ -26483,10 +26888,13 @@ I2C_COMD0_REG in Chapter I²C Controller</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>REG_DATE</name>
           <description>SPI version control</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -28320,10 +28728,13 @@ I2C_COMD0_REG in Chapter I²C Controller</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>SPI Memory Date Register</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -28529,17 +28940,47 @@ I2C_COMD0_REG in Chapter I²C Controller</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="FLASH_ACE0_ATTR">
+        <register>
           <name>FLASH_ACE1_ATTR</name>
           <addressOffset>0x18</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x00000007</resetValue>
+          <fields>
+            <field>
+              <name>FLASH_ACE0_ATTR</name>
+              <bitOffset>0</bitOffset>
+              <bitWidth>3</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="FLASH_ACE0_ATTR">
+        <register>
           <name>FLASH_ACE2_ATTR</name>
           <addressOffset>0x1C</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x00000007</resetValue>
+          <fields>
+            <field>
+              <name>FLASH_ACE0_ATTR</name>
+              <bitOffset>0</bitOffset>
+              <bitWidth>3</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="FLASH_ACE0_ATTR">
+        <register>
           <name>FLASH_ACE3_ATTR</name>
           <addressOffset>0x20</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x00000007</resetValue>
+          <fields>
+            <field>
+              <name>FLASH_ACE0_ATTR</name>
+              <bitOffset>0</bitOffset>
+              <bitWidth>3</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
         <register>
           <name>FLASH_ACE0_ADDR</name>
@@ -28554,17 +28995,44 @@ I2C_COMD0_REG in Chapter I²C Controller</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="FLASH_ACE0_ADDR">
+        <register>
           <name>FLASH_ACE1_ADDR</name>
           <addressOffset>0x28</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>S</name>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="FLASH_ACE0_ADDR">
+        <register>
           <name>FLASH_ACE2_ADDR</name>
           <addressOffset>0x2C</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>S</name>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="FLASH_ACE0_ADDR">
+        <register>
           <name>FLASH_ACE3_ADDR</name>
           <addressOffset>0x30</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>S</name>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
         <register>
           <name>FLASH_ACE0_SIZE</name>
@@ -28580,17 +29048,47 @@ I2C_COMD0_REG in Chapter I²C Controller</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="FLASH_ACE0_SIZE">
+        <register>
           <name>FLASH_ACE1_SIZE</name>
           <addressOffset>0x38</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x00001000</resetValue>
+          <fields>
+            <field>
+              <name>FLASH_ACE0_SIZE</name>
+              <bitOffset>0</bitOffset>
+              <bitWidth>16</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="FLASH_ACE0_SIZE">
+        <register>
           <name>FLASH_ACE2_SIZE</name>
           <addressOffset>0x3C</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x00001000</resetValue>
+          <fields>
+            <field>
+              <name>FLASH_ACE0_SIZE</name>
+              <bitOffset>0</bitOffset>
+              <bitWidth>16</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="FLASH_ACE0_SIZE">
+        <register>
           <name>FLASH_ACE3_SIZE</name>
           <addressOffset>0x40</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x00001000</resetValue>
+          <fields>
+            <field>
+              <name>FLASH_ACE0_SIZE</name>
+              <bitOffset>0</bitOffset>
+              <bitWidth>16</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
         <register>
           <name>SRAM_ACE0_ATTR</name>
@@ -28946,9 +29444,13 @@ I2C_COMD0_REG in Chapter I²C Controller</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
+          <description>Version control register</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -30136,10 +30638,13 @@ I2C_COMD0_REG in Chapter I²C Controller</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0xFFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -30483,10 +30988,13 @@ ready to read timer value from registers; 1: Ready to read timer value from regi
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -31333,10 +31841,13 @@ ready to read timer value from registers; 1: Ready to read timer value from regi
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>TIMERS_DATE</name>
           <description>Version control register</description>
           <addressOffset>0xF8</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <name>REGCLK</name>
@@ -33344,10 +33855,13 @@ The UART_RXFIFO_TOUT_INT interrupt will be triggered when the receiver takes mor
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>UART version control register</description>
           <addressOffset>0x74</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <name>ID</name>
@@ -34855,10 +35369,13 @@ If this bit is set to 0, UHCI decoder stops receiving payload data  upon receivi
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>UHCI version  control register</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -37539,9 +38056,96 @@ If this bit is set to 0, UHCI decoder stops receiving payload data  upon receivi
               </field>
             </fields>
           </register>
-          <register derivedFrom="USB_FS.IN_EP0.DIEPINT">
+          <register>
             <name>DIEPINT</name>
             <addressOffset>0x8</addressOffset>
+            <size>0x20</size>
+            <fields>
+              <field>
+                <name>XFERCOMPL</name>
+                <bitOffset>0</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>EPDISBLD</name>
+                <bitOffset>1</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>AHBERR</name>
+                <bitOffset>2</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>TIMEOUT</name>
+                <bitOffset>3</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>INTKNTXFEMP</name>
+                <bitOffset>4</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>INTKNEPMIS</name>
+                <bitOffset>5</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>INEPNAKEFF</name>
+                <bitOffset>6</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>TXFEMP</name>
+                <bitOffset>7</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-only</access>
+              </field>
+              <field>
+                <name>TXFIFOUNDRN</name>
+                <bitOffset>8</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>BNAINTR</name>
+                <bitOffset>9</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>PKTDRPSTS</name>
+                <bitOffset>11</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>BBLEERR</name>
+                <bitOffset>12</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>NAKINTRPT</name>
+                <bitOffset>13</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>NYETINTRPT</name>
+                <bitOffset>14</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+            </fields>
           </register>
           <register>
             <name>DIEPTSIZ</name>
@@ -37574,17 +38178,44 @@ If this bit is set to 0, UHCI decoder stops receiving payload data  upon receivi
               </field>
             </fields>
           </register>
-          <register derivedFrom="USB_FS.IN_EP0.DIEPDMA">
+          <register>
             <name>DIEPDMA</name>
             <addressOffset>0x14</addressOffset>
+            <size>0x20</size>
+            <fields>
+              <field>
+                <name>DMAADDR</name>
+                <bitOffset>0</bitOffset>
+                <bitWidth>32</bitWidth>
+                <access>read-write</access>
+              </field>
+            </fields>
           </register>
-          <register derivedFrom="USB_FS.IN_EP0.DIEPDMAB">
+          <register>
             <name>DIEPDMAB</name>
             <addressOffset>0x1C</addressOffset>
+            <size>0x20</size>
+            <fields>
+              <field>
+                <name>DMABUFFERADDR</name>
+                <bitOffset>0</bitOffset>
+                <bitWidth>32</bitWidth>
+                <access>read-only</access>
+              </field>
+            </fields>
           </register>
-          <register derivedFrom="USB_FS.IN_EP0.DTXFSTS">
+          <register>
             <name>DTXFSTS</name>
             <addressOffset>0x18</addressOffset>
+            <size>0x20</size>
+            <fields>
+              <field>
+                <name>INEPTXFSPCAVAIL</name>
+                <bitOffset>0</bitOffset>
+                <bitWidth>16</bitWidth>
+                <access>read-only</access>
+              </field>
+            </fields>
           </register>
         </cluster>
         <cluster>
@@ -37907,9 +38538,96 @@ If this bit is set to 0, UHCI decoder stops receiving payload data  upon receivi
               </field>
             </fields>
           </register>
-          <register derivedFrom="USB_FS.OUT_EP0.DOEPINT">
+          <register>
             <name>DOEPINT</name>
             <addressOffset>0x8</addressOffset>
+            <size>0x20</size>
+            <fields>
+              <field>
+                <name>XFERCOMPL</name>
+                <bitOffset>0</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>EPDISBLD</name>
+                <bitOffset>1</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>AHBERR</name>
+                <bitOffset>2</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>SETUP</name>
+                <bitOffset>3</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>OUTTKNEPDIS</name>
+                <bitOffset>4</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>STSPHSERCVD</name>
+                <bitOffset>5</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>BACK2BACKSETUP</name>
+                <bitOffset>6</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>OUTPKTERR</name>
+                <bitOffset>8</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>BNAINTR</name>
+                <bitOffset>9</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>PKTDRPSTS</name>
+                <bitOffset>11</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>BBLEERR</name>
+                <bitOffset>12</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>NAKINTRPT</name>
+                <bitOffset>13</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>NYEPINTRPT</name>
+                <bitOffset>14</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>STUPPKTRCVD</name>
+                <bitOffset>15</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+            </fields>
           </register>
           <register>
             <name>DOEPTSIZ</name>
@@ -37954,13 +38672,31 @@ If this bit is set to 0, UHCI decoder stops receiving payload data  upon receivi
               </field>
             </fields>
           </register>
-          <register derivedFrom="USB_FS.OUT_EP0.DOEPDMA">
+          <register>
             <name>DOEPDMA</name>
             <addressOffset>0x14</addressOffset>
+            <size>0x20</size>
+            <fields>
+              <field>
+                <name>DMAADDR</name>
+                <bitOffset>0</bitOffset>
+                <bitWidth>32</bitWidth>
+                <access>read-write</access>
+              </field>
+            </fields>
           </register>
-          <register derivedFrom="USB_FS.OUT_EP0.DOEPDMAB">
+          <register>
             <name>DOEPDMAB</name>
             <addressOffset>0x1C</addressOffset>
+            <size>0x20</size>
+            <fields>
+              <field>
+                <name>DMABUFFERADDR</name>
+                <bitOffset>0</bitOffset>
+                <bitWidth>32</bitWidth>
+                <access>read-write</access>
+              </field>
+            </fields>
           </register>
         </cluster>
         <register>
@@ -38274,10 +39010,13 @@ If this bit is set to 0, UHCI decoder stops receiving payload data  upon receivi
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version Control Register</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -38414,10 +39153,13 @@ If this bit is set to 0, UHCI decoder stops receiving payload data  upon receivi
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0x15C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>

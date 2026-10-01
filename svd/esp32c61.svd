@@ -3258,10 +3258,13 @@
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>CTRL_DATE</name>
           <description>version</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -4171,10 +4174,13 @@ Other: Inactive status\\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -10683,10 +10689,13 @@ Other: Inactive status\\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>CACHE_DATE</name>
           <description>Version control register</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -10876,10 +10885,13 @@ Other: Inactive status\\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <dim>8</dim>
@@ -11221,10 +11233,13 @@ Other: Inactive status\\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <name>SHA_MODE</name>
@@ -12572,10 +12587,13 @@ Other: Inactive status\\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>eFuse version register.</description>
           <addressOffset>0x198</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <name>CLK</name>
@@ -15505,10 +15523,13 @@ Other: Inactive status\\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>GPIO version register</description>
           <addressOffset>0xDFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -15920,10 +15941,13 @@ Other: Inactive status\\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>VERSION</name>
           <description>Version Control Register</description>
           <addressOffset>0x1FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -16197,10 +16221,13 @@ bit1: 1 represents space_exception  \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0x7FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -16769,10 +16796,13 @@ bit1: 1 represents space_exception  \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>DATE</description>
           <addressOffset>0x28</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -17269,10 +17299,13 @@ bit1: 1 represents space_exception  \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>DATE</description>
           <addressOffset>0x4C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -17609,10 +17642,13 @@ bit1: 1 represents space_exception  \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>DATE register</description>
           <addressOffset>0x34</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -18150,10 +18186,13 @@ HP_SYSTEM_ROM_TABLE_LOCK is 0.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>Date control and version control register</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -19653,10 +19692,13 @@ Measurement unit: i2c_sclk \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>Version register</description>
           <addressOffset>0xF8</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <name>TXFIFO_START_ADDR</name>
@@ -20956,10 +20998,13 @@ Measurement unit: i2c_sclk \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0x80</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -21184,10 +21229,13 @@ Measurement unit: i2c_sclk \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>INTERRUPT_DATE</name>
           <description>Version control register</description>
           <addressOffset>0x7FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -21219,10 +21267,13 @@ Measurement unit: i2c_sclk \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0xA0</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <name>CLOCK_GATE</name>
@@ -21416,10 +21467,13 @@ Measurement unit: i2c_sclk \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>IO_MUX Version Control Register</description>
           <addressOffset>0x1FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -22442,10 +22496,13 @@ Measurement unit: i2c_sclk \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0x174</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -22732,10 +22789,13 @@ Measurement unit: i2c_sclk \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>need_des</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -22983,10 +23043,13 @@ Measurement unit: i2c_sclk \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>need_des</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -23523,10 +23586,13 @@ Measurement unit: i2c_sclk \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>need_des</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -23788,10 +23854,13 @@ bit1: 1 represents space_exception  \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -24248,10 +24317,13 @@ Measurement unit: LP_DYN_FAST_CLK</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -24589,10 +24661,13 @@ This function only wakes up the CPU from Light-sleep. \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>LP_GPIO version register</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -24749,10 +24824,13 @@ This function only wakes up the CPU from Light-sleep. \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0x1FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -24855,10 +24933,13 @@ This function only wakes up the CPU from Light-sleep. \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -25247,10 +25328,13 @@ This function only wakes up the CPU from Light-sleep. \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>need_des</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -25574,10 +25658,13 @@ This function only wakes up the CPU from Light-sleep. \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>need_des</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -25926,10 +26013,13 @@ Bit[7:1]: Reserved\\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -26303,10 +26393,13 @@ Bit[7:1]: Reserved\\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>Date register.</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -28589,10 +28682,13 @@ This bit is automatically cleared when configurations have been updated.\\</desc
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>Date register.</description>
           <addressOffset>0xFFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -32473,10 +32569,13 @@ This bit is automatically cleared when configurations have been updated.\\</desc
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>need_des</description>
           <addressOffset>0x1A8</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -36538,10 +36637,13 @@ This bit is automatically cleared when configurations have been updated.\\</desc
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>version register</description>
           <addressOffset>0xFFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -36730,10 +36832,13 @@ This bit is automatically cleared when configurations have been updated.\\</desc
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0x2C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <dim>8</dim>
@@ -40681,10 +40786,13 @@ This bit is automatically cleared when configurations have been updated.\\</desc
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>ETM date register</description>
           <addressOffset>0x1F4</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -45482,10 +45590,13 @@ This bit is automatically cleared when configurations have been updated.\\</desc
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>XTS_DATE</name>
           <description>Manual Encryption version register</description>
           <addressOffset>0x35C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <name>MMU_ITEM_CONTENT</name>
@@ -45696,10 +45807,13 @@ This bit is automatically cleared when configurations have been updated.\\</desc
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>SPI0 version control register</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -47859,10 +47973,13 @@ Can be configured in CONF state.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control</description>
           <addressOffset>0xF0</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -49208,10 +49325,13 @@ Can be configured in CONF state.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -49707,10 +49827,13 @@ Can be configured in CONF state.</description>
             </fields>
           </register>
         </cluster>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -49794,10 +49917,13 @@ Can be configured in CONF state.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0xFFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -50448,10 +50574,13 @@ Measurement unit: XTAL_CLK  \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>NTIMERS_DATE</name>
           <description>Timer version control register</description>
           <addressOffset>0xF8</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <name>REGCLK</name>
@@ -50991,10 +51120,13 @@ Measurement unit: XTAL_CLK  \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -52695,10 +52827,13 @@ Measurement unit: byte.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>UART version control register</description>
           <addressOffset>0x8C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <name>AFIFO_STATUS</name>
@@ -54103,10 +54238,13 @@ Measurement unit: byte.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="DMA.DATE">
+        <register>
           <name>DATE</name>
           <description>Date register</description>
           <addressOffset>0x80</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>

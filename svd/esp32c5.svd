@@ -1328,10 +1328,13 @@ Only valid for DMA-AES operation.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0x68</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <cluster>
           <dim>3</dim>
@@ -3502,10 +3505,13 @@ Only valid for DMA-AES operation.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>CTRL_DATE</name>
           <description>version</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -3998,10 +4004,13 @@ Only valid for DMA-AES operation.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>VERSION</name>
           <description>Control and configuration registers</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -4911,10 +4920,13 @@ Other: Inactive status\\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -5082,10 +5094,13 @@ Other: Inactive status\\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>DS version control register</description>
           <addressOffset>0xE20</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -5281,10 +5296,13 @@ Other: Inactive status\\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <dim>12</dim>
@@ -5630,10 +5648,13 @@ Other: Inactive status\\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <name>SHA_MODE</name>
@@ -7065,10 +7086,13 @@ Other: Inactive status\\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>eFuse version register.</description>
           <addressOffset>0x198</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <name>CLK</name>
@@ -10668,10 +10692,13 @@ For the detailed signal list, see Table &lt;a href=tab:iomuxgpio-periph-signals-
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>GPIO version register</description>
           <addressOffset>0xDFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -11655,10 +11682,13 @@ Measurement unit: IO MUX operating clock cycle\\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>VERSION</name>
           <description>Version Control Register</description>
           <addressOffset>0x1FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -11929,10 +11959,13 @@ Measurement unit: IO MUX operating clock cycle\\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Date register.</description>
           <addressOffset>0x1FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -12241,10 +12274,13 @@ bit1: 1 represents space_exception  \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0x7FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -13589,9 +13625,13 @@ bit1: 1 represents space_exception  \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>MAC_DATE</name>
+          <description>AES version control register</description>
           <addressOffset>0x184</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -14160,10 +14200,13 @@ bit1: 1 represents space_exception  \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>DATE</description>
           <addressOffset>0x28</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -14660,10 +14703,13 @@ bit1: 1 represents space_exception  \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>DATE</description>
           <addressOffset>0x4C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -15000,10 +15046,13 @@ bit1: 1 represents space_exception  \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>DATE register</description>
           <addressOffset>0x34</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -15580,10 +15629,13 @@ HP_SYSTEM_ROM_TABLE_LOCK is 0.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Date control and version control register</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -15815,10 +15867,13 @@ HP_SYSTEM_ROM_TABLE_LOCK is 0.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <dim>384</dim>
@@ -17342,10 +17397,13 @@ Measurement unit: i2c_sclk \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version register</description>
           <addressOffset>0xF8</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <name>TXFIFO_START_ADDR</name>
@@ -18825,10 +18883,13 @@ Measurement unit: i2c_sclk \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0x80</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -18965,10 +19026,13 @@ Measurement unit: i2c_sclk \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>INTERRUPT_DATE</name>
           <description>Version control register</description>
           <addressOffset>0x7FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -19001,10 +19065,13 @@ Measurement unit: i2c_sclk \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0xA0</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <name>CLOCK_GATE</name>
@@ -21212,10 +21279,13 @@ Measurement unit: i2c_sclk \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>CACHE_DATE</name>
           <description>Version control register</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -21372,10 +21442,13 @@ Measurement unit: i2c_sclk \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0x1FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -21748,10 +21821,13 @@ Measurement unit: i2c_sclk \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <dim>64</dim>
@@ -22798,10 +22874,13 @@ Measurement unit: i2c_sclk \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0x174</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -23218,10 +23297,13 @@ Bit(1): enable rtc timer after crc</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>version register</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -23488,10 +23570,13 @@ Bit(1): enable rtc timer after crc</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>version register</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -23521,50 +23606,140 @@ Bit(1): enable rtc timer after crc</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="STORE0">
+        <register>
           <name>STORE1</name>
           <description>store the software massege1 in always-on field</description>
           <addressOffset>0x4</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>DATA</name>
+              <description>store the software massege0 in always-on field</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="STORE0">
+        <register>
           <name>STORE2</name>
           <description>store the software massege2 in always-on field</description>
           <addressOffset>0x8</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>DATA</name>
+              <description>store the software massege0 in always-on field</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="STORE0">
+        <register>
           <name>STORE3</name>
           <description>store the software massege3 in always-on field</description>
           <addressOffset>0xC</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>DATA</name>
+              <description>store the software massege0 in always-on field</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="STORE0">
+        <register>
           <name>STORE4</name>
           <description>store the software massege4 in always-on field</description>
           <addressOffset>0x10</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>DATA</name>
+              <description>store the software massege0 in always-on field</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="STORE0">
+        <register>
           <name>STORE5</name>
           <description>store the software massege5 in always-on field</description>
           <addressOffset>0x14</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>DATA</name>
+              <description>store the software massege0 in always-on field</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="STORE0">
+        <register>
           <name>STORE6</name>
           <description>store the software massege6 in always-on field</description>
           <addressOffset>0x18</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>DATA</name>
+              <description>store the software massege0 in always-on field</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="STORE0">
+        <register>
           <name>STORE7</name>
           <description>store the software massege7 in always-on field</description>
           <addressOffset>0x1C</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>DATA</name>
+              <description>store the software massege0 in always-on field</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="STORE0">
+        <register>
           <name>STORE8</name>
           <description>store the software massege8 in always-on field</description>
           <addressOffset>0x20</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>DATA</name>
+              <description>store the software massege0 in always-on field</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="STORE0">
+        <register>
           <name>STORE9</name>
           <description>store the software massege9 in always-on field</description>
           <addressOffset>0x24</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>DATA</name>
+              <description>store the software massege0 in always-on field</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
         <register>
           <name>GPIO_MUX</name>
@@ -24105,10 +24280,13 @@ Others : no operation</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>reserved</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -24409,10 +24587,13 @@ bit1: 1 represents space_exception  \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -24680,10 +24861,13 @@ bit1: 1 represents address out of bounds
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -25178,10 +25362,13 @@ Measurement unit: LP_DYN_FAST_CLK</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -25520,10 +25707,13 @@ This function is disabled when PD_LP_PERI is powered off.\\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>GPIO version register</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -26616,10 +26806,13 @@ SCL positive edge for a stop condition</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version register</description>
           <addressOffset>0xF8</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <name>TXFIFO_START_ADDR</name>
@@ -26784,10 +26977,13 @@ SCL positive edge for a stop condition</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>need_des</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -26944,10 +27140,13 @@ SCL positive edge for a stop condition</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>LP_IO_MUX Version Control Register</description>
           <addressOffset>0x1FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -27024,10 +27223,13 @@ SCL positive edge for a stop condition</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -27416,10 +27618,13 @@ SCL positive edge for a stop condition</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Date register</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -28852,10 +29057,13 @@ Measurement unit: byte.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>LP UART version register</description>
           <addressOffset>0x8C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <name>AFIFO_STATUS</name>
@@ -29257,10 +29465,13 @@ Measurement unit: byte.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>need_des</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -31123,10 +31334,13 @@ Measurement unit: byte.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>VERSION</name>
           <description>Version register.</description>
           <addressOffset>0x148</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -31475,10 +31689,13 @@ Bit[7:1]: Reserved\\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -32014,10 +32231,13 @@ Bit[7:1]: Reserved\\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>VERSION</name>
           <description>Version register.</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -32427,10 +32647,13 @@ Bit[7:1]: Reserved\\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>SDIO_DATE</name>
           <description>SDIO_DATE</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -34098,10 +34321,13 @@ Bit[7:1]: Reserved\\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Date register.</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -34562,10 +34788,13 @@ Measurement unit: APB_CLK cycles.\\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>PCNT version control register</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -37385,10 +37614,13 @@ This bit is automatically cleared when configurations have been updated.\\</desc
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Date register.</description>
           <addressOffset>0xFFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -41276,10 +41508,13 @@ This bit is automatically cleared when configurations have been updated.\\</desc
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>need_des</description>
           <addressOffset>0x1A8</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -45341,10 +45576,13 @@ This bit is automatically cleared when configurations have been updated.\\</desc
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>version register</description>
           <addressOffset>0xFFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -46275,10 +46513,13 @@ This bit is automatically cleared when configurations have been updated.\\</desc
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>RMT version register</description>
           <addressOffset>0xCC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -46529,10 +46770,13 @@ This option should be used together with RSA_SEARCH_POS_REG.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0x830</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -46721,10 +46965,13 @@ This option should be used together with RSA_SEARCH_POS_REG.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0x2C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <dim>8</dim>
@@ -51360,10 +51607,13 @@ This option should be used together with RSA_SEARCH_POS_REG.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>ETM date register</description>
           <addressOffset>0x1FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -54801,10 +55051,13 @@ This option should be used together with RSA_SEARCH_POS_REG.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>XTS_DATE</name>
           <description>Manual Encryption version register</description>
           <addressOffset>0x35C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <name>MMU_ITEM_CONTENT</name>
@@ -55015,10 +55268,13 @@ This option should be used together with RSA_SEARCH_POS_REG.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>SPI0 version control register</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -56357,10 +56613,13 @@ This option should be used together with RSA_SEARCH_POS_REG.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -58506,10 +58765,13 @@ Can be configured in CONF state.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control</description>
           <addressOffset>0xF0</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -58983,10 +59245,13 @@ Can be configured in CONF state.</description>
             </fields>
           </register>
         </cluster>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>system timer version control register</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -59070,10 +59335,13 @@ Can be configured in CONF state.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0xFFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -59720,10 +59988,13 @@ Measurement unit: XTAL_CLK  \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>NTIMERS_DATE</name>
           <description>Timer version control register</description>
           <addressOffset>0xF8</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <name>REGCLK</name>
@@ -60259,10 +60530,13 @@ Measurement unit: XTAL_CLK  \\</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -64400,10 +64674,13 @@ Measurement unit: byte.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>UART version control register</description>
           <addressOffset>0x8C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <name>AFIFO_STATUS</name>
@@ -65597,10 +65874,13 @@ Valid only when the Data Integrity Check Present bit in UHCI packet is 1.\\</des
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>UHCI version  control register</description>
           <addressOffset>0x80</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -66902,10 +67182,13 @@ Valid only when the Data Integrity Check Present bit in UHCI packet is 1.\\</des
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Date register</description>
           <addressOffset>0x80</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>

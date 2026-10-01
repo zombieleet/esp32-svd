@@ -12,6 +12,8 @@ svd/%.svd: patch
 	$(SVDTOOLS) patch esp-pacs/$*/svd/patches/$*.yaml
 	mv esp-pacs/$*/svd/$*.base.svd.patched esp-pacs/$*/svd/$*.svd
 	cp esp-pacs/$*/svd/$*.svd $@
+	if [ -f tinygo/$*.yaml ]; then $(SVDTOOLS) patch tinygo/$*.yaml && mv $@.patched $@; fi
+	go run flatten/main.go $@
 
 # Apply changes to .yaml files.
 patch:

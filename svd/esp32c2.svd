@@ -325,20 +325,53 @@
             </field>
           </fields>
         </register>
-        <register derivedFrom="FLASH_ACE0_ATTR">
+        <register>
           <name>FLASH_ACE1_ATTR</name>
           <description>APB_CTRL_FLASH_ACE1_ATTR_REG</description>
           <addressOffset>0x2C</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x00000003</resetValue>
+          <fields>
+            <field>
+              <name>FLASH_ACE0_ATTR</name>
+              <description>reg_flash_ace0_attr</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>2</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="FLASH_ACE0_ATTR">
+        <register>
           <name>FLASH_ACE2_ATTR</name>
           <description>APB_CTRL_FLASH_ACE2_ATTR_REG</description>
           <addressOffset>0x30</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x00000003</resetValue>
+          <fields>
+            <field>
+              <name>FLASH_ACE0_ATTR</name>
+              <description>reg_flash_ace0_attr</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>2</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="FLASH_ACE0_ATTR">
+        <register>
           <name>FLASH_ACE3_ATTR</name>
           <description>APB_CTRL_FLASH_ACE3_ATTR_REG</description>
           <addressOffset>0x34</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x00000003</resetValue>
+          <fields>
+            <field>
+              <name>FLASH_ACE0_ATTR</name>
+              <description>reg_flash_ace0_attr</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>2</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
         <register>
           <name>FLASH_ACE0_ADDR</name>
@@ -355,20 +388,50 @@
             </field>
           </fields>
         </register>
-        <register derivedFrom="FLASH_ACE0_ADDR">
+        <register>
           <name>FLASH_ACE1_ADDR</name>
           <description>APB_CTRL_FLASH_ACE1_ADDR_REG</description>
           <addressOffset>0x3C</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>S</name>
+              <description>reg_flash_ace0_addr_s</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="FLASH_ACE0_ADDR">
+        <register>
           <name>FLASH_ACE2_ADDR</name>
           <description>APB_CTRL_FLASH_ACE2_ADDR_REG</description>
           <addressOffset>0x40</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>S</name>
+              <description>reg_flash_ace0_addr_s</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="FLASH_ACE0_ADDR">
+        <register>
           <name>FLASH_ACE3_ADDR</name>
           <description>APB_CTRL_FLASH_ACE3_ADDR_REG</description>
           <addressOffset>0x44</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>S</name>
+              <description>reg_flash_ace0_addr_s</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
         <register>
           <name>FLASH_ACE0_SIZE</name>
@@ -386,20 +449,53 @@
             </field>
           </fields>
         </register>
-        <register derivedFrom="FLASH_ACE0_SIZE">
+        <register>
           <name>FLASH_ACE1_SIZE</name>
           <description>APB_CTRL_FLASH_ACE1_SIZE_REG</description>
           <addressOffset>0x4C</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x00000400</resetValue>
+          <fields>
+            <field>
+              <name>FLASH_ACE0_SIZE</name>
+              <description>reg_flash_ace0_size</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>13</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="FLASH_ACE0_SIZE">
+        <register>
           <name>FLASH_ACE2_SIZE</name>
           <description>APB_CTRL_FLASH_ACE2_SIZE_REG</description>
           <addressOffset>0x50</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x00000400</resetValue>
+          <fields>
+            <field>
+              <name>FLASH_ACE0_SIZE</name>
+              <description>reg_flash_ace0_size</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>13</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="FLASH_ACE0_SIZE">
+        <register>
           <name>FLASH_ACE3_SIZE</name>
           <description>APB_CTRL_FLASH_ACE3_SIZE_REG</description>
           <addressOffset>0x54</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x00000400</resetValue>
+          <fields>
+            <field>
+              <name>FLASH_ACE0_SIZE</name>
+              <description>reg_flash_ace0_size</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>13</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
         <register>
           <name>SPI_MEM_PMS_CTRL</name>
@@ -1750,10 +1846,13 @@
             </field>
           </fields>
         </register>
-        <register derivedFrom="APB_CTRL.DATE">
+        <register>
           <name>CTRL_DATE</name>
           <description>register description</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -2020,10 +2119,13 @@
             </field>
           </fields>
         </register>
-        <register derivedFrom="APB_CTRL.DATE">
+        <register>
           <name>DATE</name>
           <description>version register</description>
           <addressOffset>0x1FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -2555,10 +2657,13 @@
             </field>
           </fields>
         </register>
-        <register derivedFrom="APB_CTRL.DATE">
+        <register>
           <name>DATE</name>
           <description>DMA_DATE_REG.</description>
           <addressOffset>0x48</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <cluster>
           <dim>1</dim>
@@ -3369,10 +3474,13 @@
             </field>
           </fields>
         </register>
-        <register derivedFrom="APB_CTRL.DATE">
+        <register>
           <name>MULT_DATE</name>
           <description>Version control register</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <dim>8</dim>
@@ -4590,10 +4698,13 @@
             </field>
           </fields>
         </register>
-        <register derivedFrom="APB_CTRL.DATE">
+        <register>
           <name>DATE</name>
           <description>eFuse version register.</description>
           <addressOffset>0x1FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -5533,10 +5644,13 @@
             </field>
           </fields>
         </register>
-        <register derivedFrom="APB_CTRL.DATE">
+        <register>
           <name>REG_DATE</name>
           <description>This description will be updated in the near future.</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -6001,10 +6115,13 @@
             </field>
           </fields>
         </register>
-        <register derivedFrom="APB_CTRL.DATE">
+        <register>
           <name>REG_DATE</name>
           <description>GPIO version register</description>
           <addressOffset>0x6FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -7215,10 +7332,13 @@ level.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="APB_CTRL.DATE">
+        <register>
           <name>DATE</name>
           <description>Version register</description>
           <addressOffset>0xF8</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <name>TXFIFO_START_ADDR</name>
@@ -7486,10 +7606,13 @@ level.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="APB_CTRL.DATE">
+        <register>
           <name>INTERRUPT_REG_DATE</name>
           <description>register description</description>
           <addressOffset>0x7FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -7622,10 +7745,13 @@ level.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="APB_CTRL.DATE">
+        <register>
           <name>DATE</name>
           <description>IO MUX Version Control Register</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -8063,10 +8189,13 @@ The least significant eight bits represent the fractional part.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="APB_CTRL.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -8201,9 +8330,13 @@ The least significant eight bits represent the fractional part.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="APB_CTRL.DATE">
+        <register>
           <name>DATE</name>
+          <description>APB_CTRL_DATE_REG</description>
           <addressOffset>0xC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <name>ETM_CLK_CONF</name>
@@ -9110,20 +9243,50 @@ The least significant eight bits represent the fractional part.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="STORE0">
+        <register>
           <name>STORE1</name>
           <description>register description</description>
           <addressOffset>0x4C</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>DATA</name>
+              <description>Need add desc</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="STORE0">
+        <register>
           <name>STORE2</name>
           <description>register description</description>
           <addressOffset>0x50</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>DATA</name>
+              <description>Need add desc</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="STORE0">
+        <register>
           <name>STORE3</name>
           <description>register description</description>
           <addressOffset>0x54</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>DATA</name>
+              <description>Need add desc</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
         <register>
           <name>EXT_XTL_CONF</name>
@@ -9925,25 +10088,65 @@ The least significant eight bits represent the fractional part.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="STORE0">
+        <register>
           <name>STORE4</name>
           <description>register description</description>
           <addressOffset>0xAC</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>DATA</name>
+              <description>Need add desc</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="STORE0">
+        <register>
           <name>STORE5</name>
           <description>register description</description>
           <addressOffset>0xB0</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>DATA</name>
+              <description>Need add desc</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="STORE0">
+        <register>
           <name>STORE6</name>
           <description>register description</description>
           <addressOffset>0xB4</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>DATA</name>
+              <description>Need add desc</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="STORE0">
+        <register>
           <name>STORE7</name>
           <description>register description</description>
           <addressOffset>0xB8</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>DATA</name>
+              <description>Need add desc</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
         <register>
           <name>LOW_POWER_ST</name>
@@ -10852,10 +11055,13 @@ The least significant eight bits represent the fractional part.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="APB_CTRL.DATE">
+        <register>
           <name>CNTL_DATE</name>
           <description>register description</description>
           <addressOffset>0x1FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -11187,10 +11393,13 @@ The least significant eight bits represent the fractional part.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="APB_CTRL.DATE">
+        <register>
           <name>SENSITIVE_REG_DATE</name>
           <description>register description</description>
           <addressOffset>0xFFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -11374,10 +11583,13 @@ The least significant eight bits represent the fractional part.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="APB_CTRL.DATE">
+        <register>
           <name>DATE</name>
           <description>Date register.</description>
           <addressOffset>0x2C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <dim>8</dim>
@@ -12017,10 +12229,13 @@ The least significant eight bits represent the fractional part.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="APB_CTRL.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -13152,10 +13367,13 @@ The least significant eight bits represent the fractional part.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="APB_CTRL.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -15016,10 +15234,13 @@ The least significant eight bits represent the fractional part.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="APB_CTRL.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control</description>
           <addressOffset>0xF0</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -15795,15 +16016,65 @@ The least significant eight bits represent the fractional part.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="COMB_PVT_LVT_CONF">
+        <register>
           <name>COMB_PVT_NVT_CONF</name>
           <description>mem pvt register</description>
           <addressOffset>0x64</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x00000003</resetValue>
+          <fields>
+            <field>
+              <name>COMB_PATH_LEN</name>
+              <description>reg_comb_path_len_lvt</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>6</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>COMB_ERR_CNT_CLR</name>
+              <description>reg_comb_err_cnt_clr_lvt</description>
+              <bitOffset>6</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>write-only</access>
+            </field>
+            <field>
+              <name>COMB_PVT_MONITOR_EN</name>
+              <description>reg_comb_pvt_monitor_en_lvt</description>
+              <bitOffset>7</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="COMB_PVT_LVT_CONF">
+        <register>
           <name>COMB_PVT_HVT_CONF</name>
           <description>mem pvt register</description>
           <addressOffset>0x68</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x00000003</resetValue>
+          <fields>
+            <field>
+              <name>COMB_PATH_LEN</name>
+              <description>reg_comb_path_len_lvt</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>6</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>COMB_ERR_CNT_CLR</name>
+              <description>reg_comb_err_cnt_clr_lvt</description>
+              <bitOffset>6</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>write-only</access>
+            </field>
+            <field>
+              <name>COMB_PVT_MONITOR_EN</name>
+              <description>reg_comb_pvt_monitor_en_lvt</description>
+              <bitOffset>7</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
         <register>
           <name>COMB_PVT_ERR_LVT_SITE0</name>
@@ -15820,65 +16091,178 @@ The least significant eight bits represent the fractional part.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="COMB_PVT_ERR_LVT_SITE0">
+        <register>
           <name>COMB_PVT_ERR_NVT_SITE0</name>
           <description>mem pvt register</description>
           <addressOffset>0x70</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>ERR_CNT</name>
+              <description>Error counter</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>16</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="COMB_PVT_ERR_LVT_SITE0">
+        <register>
           <name>COMB_PVT_ERR_HVT_SITE0</name>
           <description>mem pvt register</description>
           <addressOffset>0x74</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>ERR_CNT</name>
+              <description>Error counter</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>16</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="COMB_PVT_ERR_LVT_SITE0">
+        <register>
           <name>COMB_PVT_ERR_LVT_SITE1</name>
           <description>mem pvt register</description>
           <addressOffset>0x78</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>ERR_CNT</name>
+              <description>Error counter</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>16</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="COMB_PVT_ERR_LVT_SITE0">
+        <register>
           <name>COMB_PVT_ERR_NVT_SITE1</name>
           <description>mem pvt register</description>
           <addressOffset>0x7C</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>ERR_CNT</name>
+              <description>Error counter</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>16</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="COMB_PVT_ERR_LVT_SITE0">
+        <register>
           <name>COMB_PVT_ERR_HVT_SITE1</name>
           <description>mem pvt register</description>
           <addressOffset>0x80</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>ERR_CNT</name>
+              <description>Error counter</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>16</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="COMB_PVT_ERR_LVT_SITE0">
+        <register>
           <name>COMB_PVT_ERR_LVT_SITE2</name>
           <description>mem pvt register</description>
           <addressOffset>0x84</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>ERR_CNT</name>
+              <description>Error counter</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>16</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="COMB_PVT_ERR_LVT_SITE0">
+        <register>
           <name>COMB_PVT_ERR_NVT_SITE2</name>
           <description>mem pvt register</description>
           <addressOffset>0x88</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>ERR_CNT</name>
+              <description>Error counter</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>16</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="COMB_PVT_ERR_LVT_SITE0">
+        <register>
           <name>COMB_PVT_ERR_HVT_SITE2</name>
           <description>mem pvt register</description>
           <addressOffset>0x8C</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>ERR_CNT</name>
+              <description>Error counter</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>16</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="COMB_PVT_ERR_LVT_SITE0">
+        <register>
           <name>COMB_PVT_ERR_LVT_SITE3</name>
           <description>mem pvt register</description>
           <addressOffset>0x90</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>ERR_CNT</name>
+              <description>Error counter</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>16</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="COMB_PVT_ERR_LVT_SITE0">
+        <register>
           <name>COMB_PVT_ERR_NVT_SITE3</name>
           <description>mem pvt register</description>
           <addressOffset>0x94</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>ERR_CNT</name>
+              <description>Error counter</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>16</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="COMB_PVT_ERR_LVT_SITE0">
+        <register>
           <name>COMB_PVT_ERR_HVT_SITE3</name>
           <description>mem pvt register</description>
           <addressOffset>0x98</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>ERR_CNT</name>
+              <description>Error counter</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>16</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="APB_CTRL.DATE">
+        <register>
           <name>REG_DATE</name>
           <description>Version register</description>
           <addressOffset>0xFFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -16307,10 +16691,13 @@ The least significant eight bits represent the fractional part.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="APB_CTRL.DATE">
+        <register>
           <name>DATE</name>
           <description>system timer version control register</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -16893,10 +17280,13 @@ protection is enabled.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="APB_CTRL.DATE">
+        <register>
           <name>NTIMERS_DATE</name>
           <description>Timer version control register</description>
           <addressOffset>0xF8</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <name>REGCLK</name>
@@ -18488,10 +18878,13 @@ protection is enabled.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="APB_CTRL.DATE">
+        <register>
           <name>DATE</name>
           <description>UART Version register</description>
           <addressOffset>0x7C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <name>ID</name>
@@ -18658,10 +19051,13 @@ protection is enabled.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="APB_CTRL.DATE">
+        <register>
           <name>DATE</name>
           <description>XTS-AES version control register</description>
           <addressOffset>0x5C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>

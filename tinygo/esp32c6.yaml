@@ -1,0 +1,21 @@
+_svd: ../svd/esp32c6.svd
+
+# DATE is derivedFrom AES.DATE, which drops the I2C_MAT_CLK_EN bit.
+# Bit layout from the Espressif esp32c6.svd in cmsis-svd-data.
+LP_I2C_ANA_MST:
+  _delete:
+    - DATE
+  _add:
+    DATE:
+      description: Version control and clock enable register
+      addressOffset: 0x3FC
+      size: 32
+      resetValue: 0x02007301
+      access: read-write
+      fields:
+        DATE:
+          bitOffset: 0
+          bitWidth: 28
+        I2C_MAT_CLK_EN:
+          bitOffset: 28
+          bitWidth: 1

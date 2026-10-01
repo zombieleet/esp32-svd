@@ -633,20 +633,53 @@
             </field>
           </fields>
         </register>
-        <register derivedFrom="FLASH_ACE0_ATTR">
+        <register>
           <name>FLASH_ACE1_ATTR</name>
           <description>******* Description ***********</description>
           <addressOffset>0x2C</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x000000FF</resetValue>
+          <fields>
+            <field>
+              <name>FLASH_ACE0_ATTR</name>
+              <description>******* Description ***********</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>9</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="FLASH_ACE0_ATTR">
+        <register>
           <name>FLASH_ACE2_ATTR</name>
           <description>******* Description ***********</description>
           <addressOffset>0x30</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x000000FF</resetValue>
+          <fields>
+            <field>
+              <name>FLASH_ACE0_ATTR</name>
+              <description>******* Description ***********</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>9</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="FLASH_ACE0_ATTR">
+        <register>
           <name>FLASH_ACE3_ATTR</name>
           <description>******* Description ***********</description>
           <addressOffset>0x34</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x000000FF</resetValue>
+          <fields>
+            <field>
+              <name>FLASH_ACE0_ATTR</name>
+              <description>******* Description ***********</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>9</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
         <register>
           <name>FLASH_ACE0_ADDR</name>
@@ -663,20 +696,50 @@
             </field>
           </fields>
         </register>
-        <register derivedFrom="FLASH_ACE0_ADDR">
+        <register>
           <name>FLASH_ACE1_ADDR</name>
           <description>******* Description ***********</description>
           <addressOffset>0x3C</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>S</name>
+              <description>******* Description ***********</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="FLASH_ACE0_ADDR">
+        <register>
           <name>FLASH_ACE2_ADDR</name>
           <description>******* Description ***********</description>
           <addressOffset>0x40</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>S</name>
+              <description>******* Description ***********</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="FLASH_ACE0_ADDR">
+        <register>
           <name>FLASH_ACE3_ADDR</name>
           <description>******* Description ***********</description>
           <addressOffset>0x44</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>S</name>
+              <description>******* Description ***********</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
         <register>
           <name>FLASH_ACE0_SIZE</name>
@@ -694,20 +757,53 @@
             </field>
           </fields>
         </register>
-        <register derivedFrom="FLASH_ACE0_SIZE">
+        <register>
           <name>FLASH_ACE1_SIZE</name>
           <description>******* Description ***********</description>
           <addressOffset>0x4C</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x00001000</resetValue>
+          <fields>
+            <field>
+              <name>FLASH_ACE0_SIZE</name>
+              <description>******* Description ***********</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>16</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="FLASH_ACE0_SIZE">
+        <register>
           <name>FLASH_ACE2_SIZE</name>
           <description>******* Description ***********</description>
           <addressOffset>0x50</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x00001000</resetValue>
+          <fields>
+            <field>
+              <name>FLASH_ACE0_SIZE</name>
+              <description>******* Description ***********</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>16</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="FLASH_ACE0_SIZE">
+        <register>
           <name>FLASH_ACE3_SIZE</name>
           <description>******* Description ***********</description>
           <addressOffset>0x54</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x00001000</resetValue>
+          <fields>
+            <field>
+              <name>FLASH_ACE0_SIZE</name>
+              <description>******* Description ***********</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>16</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
         <register>
           <name>SRAM_ACE0_ATTR</name>
@@ -1301,10 +1397,13 @@
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>******* Description ***********</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -2198,10 +2297,13 @@
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>CTRL_DATE</name>
           <description>version</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -3344,10 +3446,13 @@
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>version register</description>
           <addressOffset>0x1FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -3494,333 +3599,328 @@
               </field>
             </fields>
           </register>
-          <cluster>
-            <name>IN_INT</name>
-            <description>Cluster IN_INT, containing IN_INT_RAW, IN_INT_ST, IN_INT_ENA, IN_INT_CLR</description>
+          <register>
+            <name>IN_INT_RAW</name>
+            <description>Raw status interrupt of Rx channel 0</description>
             <addressOffset>0x8</addressOffset>
-            <register>
-              <name>RAW</name>
-              <description>Raw status interrupt of Rx channel 0</description>
-              <addressOffset>0x0</addressOffset>
-              <size>0x20</size>
-              <fields>
-                <field>
-                  <name>IN_DONE</name>
-                  <description>The raw interrupt bit turns to high level when the last data pointed by one inlink descriptor has been received for Rx channel 0.</description>
-                  <bitOffset>0</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-                <field>
-                  <name>IN_SUC_EOF</name>
-                  <description>The raw interrupt bit turns to high level when the last data pointed by one inlink descriptor has been received for Rx channel 0. For UHCI0, the raw interrupt bit turns to high level when the last data pointed by one inlink descriptor has been received and no data error is detected for Rx channel 0.</description>
-                  <bitOffset>1</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-                <field>
-                  <name>IN_ERR_EOF</name>
-                  <description>The raw interrupt bit turns to high level when data error is detected only in the case that the peripheral is UHCI0 for Rx channel 0. For other peripherals, this raw interrupt is reserved.</description>
-                  <bitOffset>2</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-                <field>
-                  <name>IN_DSCR_ERR</name>
-                  <description>The raw interrupt bit turns to high level when detecting inlink descriptor error, including owner error, the second and third word error of inlink descriptor for Rx channel 0.</description>
-                  <bitOffset>3</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-                <field>
-                  <name>IN_DSCR_EMPTY</name>
-                  <description>The raw interrupt bit turns to high level when Rx buffer pointed by inlink is full and receiving data is not completed, but there is no more inlink for Rx channel 0.</description>
-                  <bitOffset>4</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-                <field>
-                  <name>INFIFO_FULL_WM</name>
-                  <description>The raw interrupt bit turns to high level when received data byte number is up to threshold configured by REG_DMA_INFIFO_FULL_THRS_CH0 in Rx FIFO of channel 0.</description>
-                  <bitOffset>5</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-                <field>
-                  <name>INFIFO_OVF_L1</name>
-                  <description>This raw interrupt bit turns to high level when level 1 fifo of Rx channel 0 is overflow.</description>
-                  <bitOffset>6</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-                <field>
-                  <name>INFIFO_UDF_L1</name>
-                  <description>This raw interrupt bit turns to high level when level 1 fifo of Rx channel 0 is underflow.</description>
-                  <bitOffset>7</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-                <field>
-                  <name>INFIFO_OVF_L3</name>
-                  <description>This raw interrupt bit turns to high level when level 3 fifo of Rx channel 0 is overflow.</description>
-                  <bitOffset>8</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-                <field>
-                  <name>INFIFO_UDF_L3</name>
-                  <description>This raw interrupt bit turns to high level when level 3 fifo of Rx channel 0 is underflow.</description>
-                  <bitOffset>9</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-              </fields>
-            </register>
-            <register>
-              <name>ST</name>
-              <description>Masked interrupt of Rx channel 0</description>
-              <addressOffset>0x4</addressOffset>
-              <size>0x20</size>
-              <fields>
-                <field>
-                  <name>IN_DONE</name>
-                  <description>The raw interrupt status bit for the IN_DONE_CH_INT interrupt.</description>
-                  <bitOffset>0</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-only</access>
-                </field>
-                <field>
-                  <name>IN_SUC_EOF</name>
-                  <description>The raw interrupt status bit for the IN_SUC_EOF_CH_INT interrupt.</description>
-                  <bitOffset>1</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-only</access>
-                </field>
-                <field>
-                  <name>IN_ERR_EOF</name>
-                  <description>The raw interrupt status bit for the IN_ERR_EOF_CH_INT interrupt.</description>
-                  <bitOffset>2</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-only</access>
-                </field>
-                <field>
-                  <name>IN_DSCR_ERR</name>
-                  <description>The raw interrupt status bit for the IN_DSCR_ERR_CH_INT interrupt.</description>
-                  <bitOffset>3</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-only</access>
-                </field>
-                <field>
-                  <name>IN_DSCR_EMPTY</name>
-                  <description>The raw interrupt status bit for the IN_DSCR_EMPTY_CH_INT interrupt.</description>
-                  <bitOffset>4</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-only</access>
-                </field>
-                <field>
-                  <name>INFIFO_FULL_WM</name>
-                  <description>The raw interrupt status bit for the INFIFO_FULL_WM_CH_INT interrupt.</description>
-                  <bitOffset>5</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-only</access>
-                </field>
-                <field>
-                  <name>INFIFO_OVF_L1</name>
-                  <description>The raw interrupt status bit for the INFIFO_OVF_L1_CH_INT interrupt.</description>
-                  <bitOffset>6</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-only</access>
-                </field>
-                <field>
-                  <name>INFIFO_UDF_L1</name>
-                  <description>The raw interrupt status bit for the INFIFO_UDF_L1_CH_INT interrupt.</description>
-                  <bitOffset>7</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-only</access>
-                </field>
-                <field>
-                  <name>INFIFO_OVF_L3</name>
-                  <description>The raw interrupt status bit for the INFIFO_OVF_L3_CH_INT interrupt.</description>
-                  <bitOffset>8</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-only</access>
-                </field>
-                <field>
-                  <name>INFIFO_UDF_L3</name>
-                  <description>The raw interrupt status bit for the INFIFO_UDF_L3_CH_INT interrupt.</description>
-                  <bitOffset>9</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-only</access>
-                </field>
-              </fields>
-            </register>
-            <register>
-              <name>ENA</name>
-              <description>Interrupt enable bits of Rx channel 0</description>
-              <addressOffset>0x8</addressOffset>
-              <size>0x20</size>
-              <fields>
-                <field>
-                  <name>IN_DONE</name>
-                  <description>The interrupt enable bit for the IN_DONE_CH_INT interrupt.</description>
-                  <bitOffset>0</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-                <field>
-                  <name>IN_SUC_EOF</name>
-                  <description>The interrupt enable bit for the IN_SUC_EOF_CH_INT interrupt.</description>
-                  <bitOffset>1</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-                <field>
-                  <name>IN_ERR_EOF</name>
-                  <description>The interrupt enable bit for the IN_ERR_EOF_CH_INT interrupt.</description>
-                  <bitOffset>2</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-                <field>
-                  <name>IN_DSCR_ERR</name>
-                  <description>The interrupt enable bit for the IN_DSCR_ERR_CH_INT interrupt.</description>
-                  <bitOffset>3</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-                <field>
-                  <name>IN_DSCR_EMPTY</name>
-                  <description>The interrupt enable bit for the IN_DSCR_EMPTY_CH_INT interrupt.</description>
-                  <bitOffset>4</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-                <field>
-                  <name>INFIFO_FULL_WM</name>
-                  <description>The interrupt enable bit for the INFIFO_FULL_WM_CH_INT interrupt.</description>
-                  <bitOffset>5</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-                <field>
-                  <name>INFIFO_OVF_L1</name>
-                  <description>The interrupt enable bit for the INFIFO_OVF_L1_CH_INT interrupt.</description>
-                  <bitOffset>6</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-                <field>
-                  <name>INFIFO_UDF_L1</name>
-                  <description>The interrupt enable bit for the INFIFO_UDF_L1_CH_INT interrupt.</description>
-                  <bitOffset>7</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-                <field>
-                  <name>INFIFO_OVF_L3</name>
-                  <description>The interrupt enable bit for the INFIFO_OVF_L3_CH_INT interrupt.</description>
-                  <bitOffset>8</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-                <field>
-                  <name>INFIFO_UDF_L3</name>
-                  <description>The interrupt enable bit for the INFIFO_UDF_L3_CH_INT interrupt.</description>
-                  <bitOffset>9</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-              </fields>
-            </register>
-            <register>
-              <name>CLR</name>
-              <description>Interrupt clear bits of Rx channel 0</description>
-              <addressOffset>0xC</addressOffset>
-              <size>0x20</size>
-              <fields>
-                <field>
-                  <name>IN_DONE</name>
-                  <description>Set this bit to clear the IN_DONE_CH_INT interrupt.</description>
-                  <bitOffset>0</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>write-only</access>
-                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
-                </field>
-                <field>
-                  <name>IN_SUC_EOF</name>
-                  <description>Set this bit to clear the IN_SUC_EOF_CH_INT interrupt.</description>
-                  <bitOffset>1</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>write-only</access>
-                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
-                </field>
-                <field>
-                  <name>IN_ERR_EOF</name>
-                  <description>Set this bit to clear the IN_ERR_EOF_CH_INT interrupt.</description>
-                  <bitOffset>2</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>write-only</access>
-                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
-                </field>
-                <field>
-                  <name>IN_DSCR_ERR</name>
-                  <description>Set this bit to clear the IN_DSCR_ERR_CH_INT interrupt.</description>
-                  <bitOffset>3</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>write-only</access>
-                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
-                </field>
-                <field>
-                  <name>IN_DSCR_EMPTY</name>
-                  <description>Set this bit to clear the IN_DSCR_EMPTY_CH_INT interrupt.</description>
-                  <bitOffset>4</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>write-only</access>
-                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
-                </field>
-                <field>
-                  <name>DMA_INFIFO_FULL_WM</name>
-                  <description>Set this bit to clear the INFIFO_FULL_WM_CH_INT interrupt.</description>
-                  <bitOffset>5</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>write-only</access>
-                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
-                </field>
-                <field>
-                  <name>INFIFO_OVF_L1</name>
-                  <description>Set this bit to clear the INFIFO_OVF_L1_CH_INT interrupt.</description>
-                  <bitOffset>6</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>write-only</access>
-                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
-                </field>
-                <field>
-                  <name>INFIFO_UDF_L1</name>
-                  <description>Set this bit to clear the INFIFO_UDF_L1_CH_INT interrupt.</description>
-                  <bitOffset>7</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>write-only</access>
-                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
-                </field>
-                <field>
-                  <name>INFIFO_OVF_L3</name>
-                  <description>Set this bit to clear the INFIFO_OVF_L3_CH_INT interrupt.</description>
-                  <bitOffset>8</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>write-only</access>
-                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
-                </field>
-                <field>
-                  <name>INFIFO_UDF_L3</name>
-                  <description>Set this bit to clear the INFIFO_UDF_L3_CH_INT interrupt.</description>
-                  <bitOffset>9</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>write-only</access>
-                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
-                </field>
-              </fields>
-            </register>
-          </cluster>
+            <size>0x20</size>
+            <fields>
+              <field>
+                <name>IN_DONE</name>
+                <description>The raw interrupt bit turns to high level when the last data pointed by one inlink descriptor has been received for Rx channel 0.</description>
+                <bitOffset>0</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>IN_SUC_EOF</name>
+                <description>The raw interrupt bit turns to high level when the last data pointed by one inlink descriptor has been received for Rx channel 0. For UHCI0, the raw interrupt bit turns to high level when the last data pointed by one inlink descriptor has been received and no data error is detected for Rx channel 0.</description>
+                <bitOffset>1</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>IN_ERR_EOF</name>
+                <description>The raw interrupt bit turns to high level when data error is detected only in the case that the peripheral is UHCI0 for Rx channel 0. For other peripherals, this raw interrupt is reserved.</description>
+                <bitOffset>2</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>IN_DSCR_ERR</name>
+                <description>The raw interrupt bit turns to high level when detecting inlink descriptor error, including owner error, the second and third word error of inlink descriptor for Rx channel 0.</description>
+                <bitOffset>3</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>IN_DSCR_EMPTY</name>
+                <description>The raw interrupt bit turns to high level when Rx buffer pointed by inlink is full and receiving data is not completed, but there is no more inlink for Rx channel 0.</description>
+                <bitOffset>4</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>INFIFO_FULL_WM</name>
+                <description>The raw interrupt bit turns to high level when received data byte number is up to threshold configured by REG_DMA_INFIFO_FULL_THRS_CH0 in Rx FIFO of channel 0.</description>
+                <bitOffset>5</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>INFIFO_OVF_L1</name>
+                <description>This raw interrupt bit turns to high level when level 1 fifo of Rx channel 0 is overflow.</description>
+                <bitOffset>6</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>INFIFO_UDF_L1</name>
+                <description>This raw interrupt bit turns to high level when level 1 fifo of Rx channel 0 is underflow.</description>
+                <bitOffset>7</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>INFIFO_OVF_L3</name>
+                <description>This raw interrupt bit turns to high level when level 3 fifo of Rx channel 0 is overflow.</description>
+                <bitOffset>8</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>INFIFO_UDF_L3</name>
+                <description>This raw interrupt bit turns to high level when level 3 fifo of Rx channel 0 is underflow.</description>
+                <bitOffset>9</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+            </fields>
+          </register>
+          <register>
+            <name>IN_INT_ST</name>
+            <description>Masked interrupt of Rx channel 0</description>
+            <addressOffset>0xC</addressOffset>
+            <size>0x20</size>
+            <fields>
+              <field>
+                <name>IN_DONE</name>
+                <description>The raw interrupt status bit for the IN_DONE_CH_INT interrupt.</description>
+                <bitOffset>0</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-only</access>
+              </field>
+              <field>
+                <name>IN_SUC_EOF</name>
+                <description>The raw interrupt status bit for the IN_SUC_EOF_CH_INT interrupt.</description>
+                <bitOffset>1</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-only</access>
+              </field>
+              <field>
+                <name>IN_ERR_EOF</name>
+                <description>The raw interrupt status bit for the IN_ERR_EOF_CH_INT interrupt.</description>
+                <bitOffset>2</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-only</access>
+              </field>
+              <field>
+                <name>IN_DSCR_ERR</name>
+                <description>The raw interrupt status bit for the IN_DSCR_ERR_CH_INT interrupt.</description>
+                <bitOffset>3</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-only</access>
+              </field>
+              <field>
+                <name>IN_DSCR_EMPTY</name>
+                <description>The raw interrupt status bit for the IN_DSCR_EMPTY_CH_INT interrupt.</description>
+                <bitOffset>4</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-only</access>
+              </field>
+              <field>
+                <name>INFIFO_FULL_WM</name>
+                <description>The raw interrupt status bit for the INFIFO_FULL_WM_CH_INT interrupt.</description>
+                <bitOffset>5</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-only</access>
+              </field>
+              <field>
+                <name>INFIFO_OVF_L1</name>
+                <description>The raw interrupt status bit for the INFIFO_OVF_L1_CH_INT interrupt.</description>
+                <bitOffset>6</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-only</access>
+              </field>
+              <field>
+                <name>INFIFO_UDF_L1</name>
+                <description>The raw interrupt status bit for the INFIFO_UDF_L1_CH_INT interrupt.</description>
+                <bitOffset>7</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-only</access>
+              </field>
+              <field>
+                <name>INFIFO_OVF_L3</name>
+                <description>The raw interrupt status bit for the INFIFO_OVF_L3_CH_INT interrupt.</description>
+                <bitOffset>8</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-only</access>
+              </field>
+              <field>
+                <name>INFIFO_UDF_L3</name>
+                <description>The raw interrupt status bit for the INFIFO_UDF_L3_CH_INT interrupt.</description>
+                <bitOffset>9</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-only</access>
+              </field>
+            </fields>
+          </register>
+          <register>
+            <name>IN_INT_ENA</name>
+            <description>Interrupt enable bits of Rx channel 0</description>
+            <addressOffset>0x10</addressOffset>
+            <size>0x20</size>
+            <fields>
+              <field>
+                <name>IN_DONE</name>
+                <description>The interrupt enable bit for the IN_DONE_CH_INT interrupt.</description>
+                <bitOffset>0</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>IN_SUC_EOF</name>
+                <description>The interrupt enable bit for the IN_SUC_EOF_CH_INT interrupt.</description>
+                <bitOffset>1</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>IN_ERR_EOF</name>
+                <description>The interrupt enable bit for the IN_ERR_EOF_CH_INT interrupt.</description>
+                <bitOffset>2</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>IN_DSCR_ERR</name>
+                <description>The interrupt enable bit for the IN_DSCR_ERR_CH_INT interrupt.</description>
+                <bitOffset>3</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>IN_DSCR_EMPTY</name>
+                <description>The interrupt enable bit for the IN_DSCR_EMPTY_CH_INT interrupt.</description>
+                <bitOffset>4</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>INFIFO_FULL_WM</name>
+                <description>The interrupt enable bit for the INFIFO_FULL_WM_CH_INT interrupt.</description>
+                <bitOffset>5</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>INFIFO_OVF_L1</name>
+                <description>The interrupt enable bit for the INFIFO_OVF_L1_CH_INT interrupt.</description>
+                <bitOffset>6</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>INFIFO_UDF_L1</name>
+                <description>The interrupt enable bit for the INFIFO_UDF_L1_CH_INT interrupt.</description>
+                <bitOffset>7</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>INFIFO_OVF_L3</name>
+                <description>The interrupt enable bit for the INFIFO_OVF_L3_CH_INT interrupt.</description>
+                <bitOffset>8</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>INFIFO_UDF_L3</name>
+                <description>The interrupt enable bit for the INFIFO_UDF_L3_CH_INT interrupt.</description>
+                <bitOffset>9</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+            </fields>
+          </register>
+          <register>
+            <name>IN_INT_CLR</name>
+            <description>Interrupt clear bits of Rx channel 0</description>
+            <addressOffset>0x14</addressOffset>
+            <size>0x20</size>
+            <fields>
+              <field>
+                <name>IN_DONE</name>
+                <description>Set this bit to clear the IN_DONE_CH_INT interrupt.</description>
+                <bitOffset>0</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>write-only</access>
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
+              </field>
+              <field>
+                <name>IN_SUC_EOF</name>
+                <description>Set this bit to clear the IN_SUC_EOF_CH_INT interrupt.</description>
+                <bitOffset>1</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>write-only</access>
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
+              </field>
+              <field>
+                <name>IN_ERR_EOF</name>
+                <description>Set this bit to clear the IN_ERR_EOF_CH_INT interrupt.</description>
+                <bitOffset>2</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>write-only</access>
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
+              </field>
+              <field>
+                <name>IN_DSCR_ERR</name>
+                <description>Set this bit to clear the IN_DSCR_ERR_CH_INT interrupt.</description>
+                <bitOffset>3</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>write-only</access>
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
+              </field>
+              <field>
+                <name>IN_DSCR_EMPTY</name>
+                <description>Set this bit to clear the IN_DSCR_EMPTY_CH_INT interrupt.</description>
+                <bitOffset>4</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>write-only</access>
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
+              </field>
+              <field>
+                <name>DMA_INFIFO_FULL_WM</name>
+                <description>Set this bit to clear the INFIFO_FULL_WM_CH_INT interrupt.</description>
+                <bitOffset>5</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>write-only</access>
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
+              </field>
+              <field>
+                <name>INFIFO_OVF_L1</name>
+                <description>Set this bit to clear the INFIFO_OVF_L1_CH_INT interrupt.</description>
+                <bitOffset>6</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>write-only</access>
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
+              </field>
+              <field>
+                <name>INFIFO_UDF_L1</name>
+                <description>Set this bit to clear the INFIFO_UDF_L1_CH_INT interrupt.</description>
+                <bitOffset>7</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>write-only</access>
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
+              </field>
+              <field>
+                <name>INFIFO_OVF_L3</name>
+                <description>Set this bit to clear the INFIFO_OVF_L3_CH_INT interrupt.</description>
+                <bitOffset>8</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>write-only</access>
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
+              </field>
+              <field>
+                <name>INFIFO_UDF_L3</name>
+                <description>Set this bit to clear the INFIFO_UDF_L3_CH_INT interrupt.</description>
+                <bitOffset>9</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>write-only</access>
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
+              </field>
+            </fields>
+          </register>
           <register>
             <name>INFIFO_STATUS</name>
             <description>Receive FIFO status of Rx channel 0</description>
@@ -4226,275 +4326,270 @@
               </field>
             </fields>
           </register>
-          <cluster>
-            <name>OUT_INT</name>
-            <description>Cluster OUT_INT, containing OUT_INT_RAW, OUT_INT_ST, OUT_INT_ENA, OUT_INT_CLR</description>
+          <register>
+            <name>OUT_INT_RAW</name>
+            <description>Raw status interrupt of Tx channel 0</description>
             <addressOffset>0x68</addressOffset>
-            <register>
-              <name>RAW</name>
-              <description>Raw status interrupt of Tx channel 0</description>
-              <addressOffset>0x0</addressOffset>
-              <size>0x20</size>
-              <fields>
-                <field>
-                  <name>OUT_DONE</name>
-                  <description>The raw interrupt bit turns to high level when the last data pointed by one outlink descriptor has been transmitted to peripherals for Tx channel 0.</description>
-                  <bitOffset>0</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-                <field>
-                  <name>OUT_EOF</name>
-                  <description>The raw interrupt bit turns to high level when the last data pointed by one outlink descriptor has been read from memory for Tx channel 0.</description>
-                  <bitOffset>1</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-                <field>
-                  <name>OUT_DSCR_ERR</name>
-                  <description>The raw interrupt bit turns to high level when detecting outlink descriptor error, including owner error, the second and third word error of outlink descriptor for Tx channel 0.</description>
-                  <bitOffset>2</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-                <field>
-                  <name>OUT_TOTAL_EOF</name>
-                  <description>The raw interrupt bit turns to high level when data corresponding a outlink (includes one link descriptor or few link descriptors) is transmitted out for Tx channel 0.</description>
-                  <bitOffset>3</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-                <field>
-                  <name>OUTFIFO_OVF_L1</name>
-                  <description>This raw interrupt bit turns to high level when level 1 fifo of Tx channel 0 is overflow.</description>
-                  <bitOffset>4</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-                <field>
-                  <name>OUTFIFO_UDF_L1</name>
-                  <description>This raw interrupt bit turns to high level when level 1 fifo of Tx channel 0 is underflow.</description>
-                  <bitOffset>5</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-                <field>
-                  <name>OUTFIFO_OVF_L3</name>
-                  <description>This raw interrupt bit turns to high level when level 3 fifo of Tx channel 0 is overflow.</description>
-                  <bitOffset>6</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-                <field>
-                  <name>OUTFIFO_UDF_L3</name>
-                  <description>This raw interrupt bit turns to high level when level 3 fifo of Tx channel 0 is underflow.</description>
-                  <bitOffset>7</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-              </fields>
-            </register>
-            <register>
-              <name>ST</name>
-              <description>Masked interrupt of Tx channel 0</description>
-              <addressOffset>0x4</addressOffset>
-              <size>0x20</size>
-              <fields>
-                <field>
-                  <name>OUT_DONE</name>
-                  <description>The raw interrupt status bit for the OUT_DONE_CH_INT interrupt.</description>
-                  <bitOffset>0</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-only</access>
-                </field>
-                <field>
-                  <name>OUT_EOF</name>
-                  <description>The raw interrupt status bit for the OUT_EOF_CH_INT interrupt.</description>
-                  <bitOffset>1</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-only</access>
-                </field>
-                <field>
-                  <name>OUT_DSCR_ERR</name>
-                  <description>The raw interrupt status bit for the OUT_DSCR_ERR_CH_INT interrupt.</description>
-                  <bitOffset>2</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-only</access>
-                </field>
-                <field>
-                  <name>OUT_TOTAL_EOF</name>
-                  <description>The raw interrupt status bit for the OUT_TOTAL_EOF_CH_INT interrupt.</description>
-                  <bitOffset>3</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-only</access>
-                </field>
-                <field>
-                  <name>OUTFIFO_OVF_L1</name>
-                  <description>The raw interrupt status bit for the OUTFIFO_OVF_L1_CH_INT interrupt.</description>
-                  <bitOffset>4</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-only</access>
-                </field>
-                <field>
-                  <name>OUTFIFO_UDF_L1</name>
-                  <description>The raw interrupt status bit for the OUTFIFO_UDF_L1_CH_INT interrupt.</description>
-                  <bitOffset>5</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-only</access>
-                </field>
-                <field>
-                  <name>OUTFIFO_OVF_L3</name>
-                  <description>The raw interrupt status bit for the OUTFIFO_OVF_L3_CH_INT interrupt.</description>
-                  <bitOffset>6</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-only</access>
-                </field>
-                <field>
-                  <name>OUTFIFO_UDF_L3</name>
-                  <description>The raw interrupt status bit for the OUTFIFO_UDF_L3_CH_INT interrupt.</description>
-                  <bitOffset>7</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-only</access>
-                </field>
-              </fields>
-            </register>
-            <register>
-              <name>ENA</name>
-              <description>Interrupt enable bits of Tx channel 0</description>
-              <addressOffset>0x8</addressOffset>
-              <size>0x20</size>
-              <fields>
-                <field>
-                  <name>OUT_DONE</name>
-                  <description>The interrupt enable bit for the OUT_DONE_CH_INT interrupt.</description>
-                  <bitOffset>0</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-                <field>
-                  <name>OUT_EOF</name>
-                  <description>The interrupt enable bit for the OUT_EOF_CH_INT interrupt.</description>
-                  <bitOffset>1</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-                <field>
-                  <name>OUT_DSCR_ERR</name>
-                  <description>The interrupt enable bit for the OUT_DSCR_ERR_CH_INT interrupt.</description>
-                  <bitOffset>2</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-                <field>
-                  <name>OUT_TOTAL_EOF</name>
-                  <description>The interrupt enable bit for the OUT_TOTAL_EOF_CH_INT interrupt.</description>
-                  <bitOffset>3</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-                <field>
-                  <name>OUTFIFO_OVF_L1</name>
-                  <description>The interrupt enable bit for the OUTFIFO_OVF_L1_CH_INT interrupt.</description>
-                  <bitOffset>4</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-                <field>
-                  <name>OUTFIFO_UDF_L1</name>
-                  <description>The interrupt enable bit for the OUTFIFO_UDF_L1_CH_INT interrupt.</description>
-                  <bitOffset>5</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-                <field>
-                  <name>OUTFIFO_OVF_L3</name>
-                  <description>The interrupt enable bit for the OUTFIFO_OVF_L3_CH_INT interrupt.</description>
-                  <bitOffset>6</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-                <field>
-                  <name>OUTFIFO_UDF_L3</name>
-                  <description>The interrupt enable bit for the OUTFIFO_UDF_L3_CH_INT interrupt.</description>
-                  <bitOffset>7</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>read-write</access>
-                </field>
-              </fields>
-            </register>
-            <register>
-              <name>CLR</name>
-              <description>Interrupt clear bits of Tx channel 0</description>
-              <addressOffset>0xC</addressOffset>
-              <size>0x20</size>
-              <fields>
-                <field>
-                  <name>OUT_DONE</name>
-                  <description>Set this bit to clear the OUT_DONE_CH_INT interrupt.</description>
-                  <bitOffset>0</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>write-only</access>
-                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
-                </field>
-                <field>
-                  <name>OUT_EOF</name>
-                  <description>Set this bit to clear the OUT_EOF_CH_INT interrupt.</description>
-                  <bitOffset>1</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>write-only</access>
-                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
-                </field>
-                <field>
-                  <name>OUT_DSCR_ERR</name>
-                  <description>Set this bit to clear the OUT_DSCR_ERR_CH_INT interrupt.</description>
-                  <bitOffset>2</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>write-only</access>
-                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
-                </field>
-                <field>
-                  <name>OUT_TOTAL_EOF</name>
-                  <description>Set this bit to clear the OUT_TOTAL_EOF_CH_INT interrupt.</description>
-                  <bitOffset>3</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>write-only</access>
-                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
-                </field>
-                <field>
-                  <name>OUTFIFO_OVF_L1</name>
-                  <description>Set this bit to clear the OUTFIFO_OVF_L1_CH_INT interrupt.</description>
-                  <bitOffset>4</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>write-only</access>
-                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
-                </field>
-                <field>
-                  <name>OUTFIFO_UDF_L1</name>
-                  <description>Set this bit to clear the OUTFIFO_UDF_L1_CH_INT interrupt.</description>
-                  <bitOffset>5</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>write-only</access>
-                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
-                </field>
-                <field>
-                  <name>OUTFIFO_OVF_L3</name>
-                  <description>Set this bit to clear the OUTFIFO_OVF_L3_CH_INT interrupt.</description>
-                  <bitOffset>6</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>write-only</access>
-                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
-                </field>
-                <field>
-                  <name>OUTFIFO_UDF_L3</name>
-                  <description>Set this bit to clear the OUTFIFO_UDF_L3_CH_INT interrupt.</description>
-                  <bitOffset>7</bitOffset>
-                  <bitWidth>1</bitWidth>
-                  <access>write-only</access>
-                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
-                </field>
-              </fields>
-            </register>
-          </cluster>
+            <size>0x20</size>
+            <fields>
+              <field>
+                <name>OUT_DONE</name>
+                <description>The raw interrupt bit turns to high level when the last data pointed by one outlink descriptor has been transmitted to peripherals for Tx channel 0.</description>
+                <bitOffset>0</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>OUT_EOF</name>
+                <description>The raw interrupt bit turns to high level when the last data pointed by one outlink descriptor has been read from memory for Tx channel 0.</description>
+                <bitOffset>1</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>OUT_DSCR_ERR</name>
+                <description>The raw interrupt bit turns to high level when detecting outlink descriptor error, including owner error, the second and third word error of outlink descriptor for Tx channel 0.</description>
+                <bitOffset>2</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>OUT_TOTAL_EOF</name>
+                <description>The raw interrupt bit turns to high level when data corresponding a outlink (includes one link descriptor or few link descriptors) is transmitted out for Tx channel 0.</description>
+                <bitOffset>3</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>OUTFIFO_OVF_L1</name>
+                <description>This raw interrupt bit turns to high level when level 1 fifo of Tx channel 0 is overflow.</description>
+                <bitOffset>4</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>OUTFIFO_UDF_L1</name>
+                <description>This raw interrupt bit turns to high level when level 1 fifo of Tx channel 0 is underflow.</description>
+                <bitOffset>5</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>OUTFIFO_OVF_L3</name>
+                <description>This raw interrupt bit turns to high level when level 3 fifo of Tx channel 0 is overflow.</description>
+                <bitOffset>6</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>OUTFIFO_UDF_L3</name>
+                <description>This raw interrupt bit turns to high level when level 3 fifo of Tx channel 0 is underflow.</description>
+                <bitOffset>7</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+            </fields>
+          </register>
+          <register>
+            <name>OUT_INT_ST</name>
+            <description>Masked interrupt of Tx channel 0</description>
+            <addressOffset>0x6C</addressOffset>
+            <size>0x20</size>
+            <fields>
+              <field>
+                <name>OUT_DONE</name>
+                <description>The raw interrupt status bit for the OUT_DONE_CH_INT interrupt.</description>
+                <bitOffset>0</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-only</access>
+              </field>
+              <field>
+                <name>OUT_EOF</name>
+                <description>The raw interrupt status bit for the OUT_EOF_CH_INT interrupt.</description>
+                <bitOffset>1</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-only</access>
+              </field>
+              <field>
+                <name>OUT_DSCR_ERR</name>
+                <description>The raw interrupt status bit for the OUT_DSCR_ERR_CH_INT interrupt.</description>
+                <bitOffset>2</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-only</access>
+              </field>
+              <field>
+                <name>OUT_TOTAL_EOF</name>
+                <description>The raw interrupt status bit for the OUT_TOTAL_EOF_CH_INT interrupt.</description>
+                <bitOffset>3</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-only</access>
+              </field>
+              <field>
+                <name>OUTFIFO_OVF_L1</name>
+                <description>The raw interrupt status bit for the OUTFIFO_OVF_L1_CH_INT interrupt.</description>
+                <bitOffset>4</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-only</access>
+              </field>
+              <field>
+                <name>OUTFIFO_UDF_L1</name>
+                <description>The raw interrupt status bit for the OUTFIFO_UDF_L1_CH_INT interrupt.</description>
+                <bitOffset>5</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-only</access>
+              </field>
+              <field>
+                <name>OUTFIFO_OVF_L3</name>
+                <description>The raw interrupt status bit for the OUTFIFO_OVF_L3_CH_INT interrupt.</description>
+                <bitOffset>6</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-only</access>
+              </field>
+              <field>
+                <name>OUTFIFO_UDF_L3</name>
+                <description>The raw interrupt status bit for the OUTFIFO_UDF_L3_CH_INT interrupt.</description>
+                <bitOffset>7</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-only</access>
+              </field>
+            </fields>
+          </register>
+          <register>
+            <name>OUT_INT_ENA</name>
+            <description>Interrupt enable bits of Tx channel 0</description>
+            <addressOffset>0x70</addressOffset>
+            <size>0x20</size>
+            <fields>
+              <field>
+                <name>OUT_DONE</name>
+                <description>The interrupt enable bit for the OUT_DONE_CH_INT interrupt.</description>
+                <bitOffset>0</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>OUT_EOF</name>
+                <description>The interrupt enable bit for the OUT_EOF_CH_INT interrupt.</description>
+                <bitOffset>1</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>OUT_DSCR_ERR</name>
+                <description>The interrupt enable bit for the OUT_DSCR_ERR_CH_INT interrupt.</description>
+                <bitOffset>2</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>OUT_TOTAL_EOF</name>
+                <description>The interrupt enable bit for the OUT_TOTAL_EOF_CH_INT interrupt.</description>
+                <bitOffset>3</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>OUTFIFO_OVF_L1</name>
+                <description>The interrupt enable bit for the OUTFIFO_OVF_L1_CH_INT interrupt.</description>
+                <bitOffset>4</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>OUTFIFO_UDF_L1</name>
+                <description>The interrupt enable bit for the OUTFIFO_UDF_L1_CH_INT interrupt.</description>
+                <bitOffset>5</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>OUTFIFO_OVF_L3</name>
+                <description>The interrupt enable bit for the OUTFIFO_OVF_L3_CH_INT interrupt.</description>
+                <bitOffset>6</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>OUTFIFO_UDF_L3</name>
+                <description>The interrupt enable bit for the OUTFIFO_UDF_L3_CH_INT interrupt.</description>
+                <bitOffset>7</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+            </fields>
+          </register>
+          <register>
+            <name>OUT_INT_CLR</name>
+            <description>Interrupt clear bits of Tx channel 0</description>
+            <addressOffset>0x74</addressOffset>
+            <size>0x20</size>
+            <fields>
+              <field>
+                <name>OUT_DONE</name>
+                <description>Set this bit to clear the OUT_DONE_CH_INT interrupt.</description>
+                <bitOffset>0</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>write-only</access>
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
+              </field>
+              <field>
+                <name>OUT_EOF</name>
+                <description>Set this bit to clear the OUT_EOF_CH_INT interrupt.</description>
+                <bitOffset>1</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>write-only</access>
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
+              </field>
+              <field>
+                <name>OUT_DSCR_ERR</name>
+                <description>Set this bit to clear the OUT_DSCR_ERR_CH_INT interrupt.</description>
+                <bitOffset>2</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>write-only</access>
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
+              </field>
+              <field>
+                <name>OUT_TOTAL_EOF</name>
+                <description>Set this bit to clear the OUT_TOTAL_EOF_CH_INT interrupt.</description>
+                <bitOffset>3</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>write-only</access>
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
+              </field>
+              <field>
+                <name>OUTFIFO_OVF_L1</name>
+                <description>Set this bit to clear the OUTFIFO_OVF_L1_CH_INT interrupt.</description>
+                <bitOffset>4</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>write-only</access>
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
+              </field>
+              <field>
+                <name>OUTFIFO_UDF_L1</name>
+                <description>Set this bit to clear the OUTFIFO_UDF_L1_CH_INT interrupt.</description>
+                <bitOffset>5</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>write-only</access>
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
+              </field>
+              <field>
+                <name>OUTFIFO_OVF_L3</name>
+                <description>Set this bit to clear the OUTFIFO_OVF_L3_CH_INT interrupt.</description>
+                <bitOffset>6</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>write-only</access>
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
+              </field>
+              <field>
+                <name>OUTFIFO_UDF_L3</name>
+                <description>Set this bit to clear the OUTFIFO_UDF_L3_CH_INT interrupt.</description>
+                <bitOffset>7</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>write-only</access>
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
+              </field>
+            </fields>
+          </register>
           <register>
             <name>OUTFIFO_STATUS</name>
             <description>Transmit FIFO status of Tx channel 0</description>
@@ -5041,10 +5136,13 @@
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0x40C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -5197,10 +5295,13 @@
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>DS version control register</description>
           <addressOffset>0xE20</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -8063,10 +8164,13 @@
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>eFuse version register.</description>
           <addressOffset>0x1FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -10423,10 +10527,13 @@
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>******* Description ***********</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -11116,10 +11223,13 @@
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>REG_DATE</name>
           <description>GPIO version register</description>
           <addressOffset>0x6FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -11196,10 +11306,13 @@
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>VERSION</name>
           <description>Version Control Register</description>
           <addressOffset>0x28</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -11542,10 +11655,13 @@
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Date register.</description>
           <addressOffset>0x1FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -12930,10 +13046,13 @@ level.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version register</description>
           <addressOffset>0xF8</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <name>TXFIFO_START_ADDR</name>
@@ -14271,10 +14390,13 @@ level.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0x80</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -15408,10 +15530,13 @@ level.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0x80</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -15592,10 +15717,13 @@ level.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>version register</description>
           <addressOffset>0x7FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -15680,10 +15808,13 @@ level.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>version register</description>
           <addressOffset>0xFFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -15816,10 +15947,13 @@ level.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>IO MUX Version Control Register</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -16842,10 +16976,13 @@ level.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>LC_REG_DATE</name>
           <description>Version control register</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -17304,10 +17441,13 @@ The least significant eight bits represent the fractional part.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -17769,10 +17909,13 @@ Any pulses with width less than this will be ignored when the filter is enabled.
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>PCNT version control register</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -17994,10 +18137,13 @@ Any pulses with width less than this will be ignored when the filter is enabled.
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>x</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -19527,10 +19673,13 @@ Any pulses with width less than this will be ignored when the filter is enabled.
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>VERSION</name>
           <description>Version register.</description>
           <addressOffset>0x124</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -20544,10 +20693,13 @@ Any pulses with width less than this will be ignored when the filter is enabled.
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>RMT version register</description>
           <addressOffset>0xCC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -20803,10 +20955,13 @@ Any pulses with width less than this will be ignored when the filter is enabled.
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>RSA version control register</description>
           <addressOffset>0x830</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -22228,20 +22383,50 @@ Any pulses with width less than this will be ignored when the filter is enabled.
             </field>
           </fields>
         </register>
-        <register derivedFrom="STORE0">
+        <register>
           <name>STORE1</name>
           <description>Reserved register</description>
           <addressOffset>0x54</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>DATA</name>
+              <description>Reserved register</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="STORE0">
+        <register>
           <name>STORE2</name>
           <description>Reserved register</description>
           <addressOffset>0x58</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>DATA</name>
+              <description>Reserved register</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="STORE0">
+        <register>
           <name>STORE3</name>
           <description>Reserved register</description>
           <addressOffset>0x5C</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>DATA</name>
+              <description>Reserved register</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
         <register>
           <name>EXT_XTL_CONF</name>
@@ -23583,25 +23768,65 @@ Any pulses with width less than this will be ignored when the filter is enabled.
             </field>
           </fields>
         </register>
-        <register derivedFrom="STORE0">
+        <register>
           <name>STORE4</name>
           <description>reserved register</description>
           <addressOffset>0xC0</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>DATA</name>
+              <description>Reserved register</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="STORE0">
+        <register>
           <name>STORE5</name>
           <description>reserved register</description>
           <addressOffset>0xC4</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>DATA</name>
+              <description>Reserved register</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="STORE0">
+        <register>
           <name>STORE6</name>
           <description>reserved register</description>
           <addressOffset>0xC8</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>DATA</name>
+              <description>Reserved register</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="STORE0">
+        <register>
           <name>STORE7</name>
           <description>reserved register</description>
           <addressOffset>0xCC</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>DATA</name>
+              <description>Reserved register</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
         <register>
           <name>LOW_POWER_ST</name>
@@ -26199,10 +26424,13 @@ Any pulses with width less than this will be ignored when the filter is enabled.
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>version register</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -26545,15 +26773,149 @@ Any pulses with width less than this will be ignored when the filter is enabled.
             </field>
           </fields>
         </register>
-        <register derivedFrom="RTC_PAD19">
+        <register>
           <name>XTAL_32P_PAD</name>
           <description>configure RTC  PAD15</description>
           <addressOffset>0xC0</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x50000000</resetValue>
+          <fields>
+            <field>
+              <name>FUN_IE</name>
+              <description>input enable in work mode</description>
+              <bitOffset>13</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>SLP_OE</name>
+              <description>output enable in sleep mode</description>
+              <bitOffset>14</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>SLP_IE</name>
+              <description>input enable in sleep mode</description>
+              <bitOffset>15</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>SLP_SEL</name>
+              <description>1: enable sleep mode during sleep,0: no sleep mode</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>FUN_SEL</name>
+              <description>function sel</description>
+              <bitOffset>17</bitOffset>
+              <bitWidth>2</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>MUX_SEL</name>
+              <description>1: use RTC GPIO,0: use digital GPIO</description>
+              <bitOffset>19</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>RUE</name>
+              <description>RUE</description>
+              <bitOffset>27</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>RDE</name>
+              <description>RDE</description>
+              <bitOffset>28</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>DRV</name>
+              <description>DRV</description>
+              <bitOffset>29</bitOffset>
+              <bitWidth>2</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="RTC_PAD19">
+        <register>
           <name>XTAL_32N_PAD</name>
           <description>configure RTC  PAD16</description>
           <addressOffset>0xC4</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x50000000</resetValue>
+          <fields>
+            <field>
+              <name>FUN_IE</name>
+              <description>input enable in work mode</description>
+              <bitOffset>13</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>SLP_OE</name>
+              <description>output enable in sleep mode</description>
+              <bitOffset>14</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>SLP_IE</name>
+              <description>input enable in sleep mode</description>
+              <bitOffset>15</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>SLP_SEL</name>
+              <description>1: enable sleep mode during sleep,0: no sleep mode</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>FUN_SEL</name>
+              <description>function sel</description>
+              <bitOffset>17</bitOffset>
+              <bitWidth>2</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>MUX_SEL</name>
+              <description>1: use RTC GPIO,0: use digital GPIO</description>
+              <bitOffset>19</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>RUE</name>
+              <description>RUE</description>
+              <bitOffset>27</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>RDE</name>
+              <description>RDE</description>
+              <bitOffset>28</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>DRV</name>
+              <description>DRV</description>
+              <bitOffset>29</bitOffset>
+              <bitWidth>2</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
         <register>
           <dim>2</dim>
@@ -26723,15 +27085,149 @@ Any pulses with width less than this will be ignored when the filter is enabled.
             </field>
           </fields>
         </register>
-        <register derivedFrom="RTC_PAD19">
+        <register>
           <name>RTC_PAD20</name>
           <description>configure RTC  PAD20</description>
           <addressOffset>0xD4</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x50000000</resetValue>
+          <fields>
+            <field>
+              <name>FUN_IE</name>
+              <description>input enable in work mode</description>
+              <bitOffset>13</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>SLP_OE</name>
+              <description>output enable in sleep mode</description>
+              <bitOffset>14</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>SLP_IE</name>
+              <description>input enable in sleep mode</description>
+              <bitOffset>15</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>SLP_SEL</name>
+              <description>1: enable sleep mode during sleep,0: no sleep mode</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>FUN_SEL</name>
+              <description>function sel</description>
+              <bitOffset>17</bitOffset>
+              <bitWidth>2</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>MUX_SEL</name>
+              <description>1: use RTC GPIO,0: use digital GPIO</description>
+              <bitOffset>19</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>RUE</name>
+              <description>RUE</description>
+              <bitOffset>27</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>RDE</name>
+              <description>RDE</description>
+              <bitOffset>28</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>DRV</name>
+              <description>DRV</description>
+              <bitOffset>29</bitOffset>
+              <bitWidth>2</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="RTC_PAD19">
+        <register>
           <name>RTC_PAD21</name>
           <description>configure RTC  PAD21</description>
           <addressOffset>0xD8</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x50000000</resetValue>
+          <fields>
+            <field>
+              <name>FUN_IE</name>
+              <description>input enable in work mode</description>
+              <bitOffset>13</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>SLP_OE</name>
+              <description>output enable in sleep mode</description>
+              <bitOffset>14</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>SLP_IE</name>
+              <description>input enable in sleep mode</description>
+              <bitOffset>15</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>SLP_SEL</name>
+              <description>1: enable sleep mode during sleep,0: no sleep mode</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>FUN_SEL</name>
+              <description>function sel</description>
+              <bitOffset>17</bitOffset>
+              <bitWidth>2</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>MUX_SEL</name>
+              <description>1: use RTC GPIO,0: use digital GPIO</description>
+              <bitOffset>19</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>RUE</name>
+              <description>RUE</description>
+              <bitOffset>27</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>RDE</name>
+              <description>RDE</description>
+              <bitOffset>28</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>DRV</name>
+              <description>DRV</description>
+              <bitOffset>29</bitOffset>
+              <bitWidth>2</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
         <register>
           <name>EXT_WAKEUP0</name>
@@ -26814,10 +27310,13 @@ Any pulses with width less than this will be ignored when the filter is enabled.
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>version</description>
           <addressOffset>0x1FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -35754,10 +36253,13 @@ IDINTEN[4]: DU Interrupt.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Sensitive version register.</description>
           <addressOffset>0xFFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -35941,10 +36443,13 @@ IDINTEN[4]: DU Interrupt.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Date register.</description>
           <addressOffset>0x2C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <dim>16</dim>
@@ -39000,10 +39505,13 @@ IDINTEN[4]: DU Interrupt.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>SPI0 version control register</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -40864,10 +41372,13 @@ IDINTEN[4]: DU Interrupt.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control</description>
           <addressOffset>0xF0</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -42095,15 +42606,65 @@ IDINTEN[4]: DU Interrupt.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="COMB_PVT_LVT_CONF">
+        <register>
           <name>COMB_PVT_NVT_CONF</name>
           <description>******* Description ***********</description>
           <addressOffset>0x6C</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x00000003</resetValue>
+          <fields>
+            <field>
+              <name>COMB_PATH_LEN</name>
+              <description>******* Description ***********</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>5</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>COMB_ERR_CNT_CLR</name>
+              <description>******* Description ***********</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>write-only</access>
+            </field>
+            <field>
+              <name>COMB_PVT_MONITOR_EN</name>
+              <description>******* Description ***********</description>
+              <bitOffset>6</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="COMB_PVT_LVT_CONF">
+        <register>
           <name>COMB_PVT_HVT_CONF</name>
           <description>******* Description ***********</description>
           <addressOffset>0x70</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x00000003</resetValue>
+          <fields>
+            <field>
+              <name>COMB_PATH_LEN</name>
+              <description>******* Description ***********</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>5</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>COMB_ERR_CNT_CLR</name>
+              <description>******* Description ***********</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>write-only</access>
+            </field>
+            <field>
+              <name>COMB_PVT_MONITOR_EN</name>
+              <description>******* Description ***********</description>
+              <bitOffset>6</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
         <register>
           <name>COMB_PVT_ERR_LVT_SITE0</name>
@@ -42120,65 +42681,178 @@ IDINTEN[4]: DU Interrupt.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="COMB_PVT_ERR_LVT_SITE0">
+        <register>
           <name>COMB_PVT_ERR_NVT_SITE0</name>
           <description>******* Description ***********</description>
           <addressOffset>0x78</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>ERR_CNT</name>
+              <description>Error counter</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>16</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="COMB_PVT_ERR_LVT_SITE0">
+        <register>
           <name>COMB_PVT_ERR_HVT_SITE0</name>
           <description>******* Description ***********</description>
           <addressOffset>0x7C</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>ERR_CNT</name>
+              <description>Error counter</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>16</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="COMB_PVT_ERR_LVT_SITE0">
+        <register>
           <name>COMB_PVT_ERR_LVT_SITE1</name>
           <description>******* Description ***********</description>
           <addressOffset>0x80</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>ERR_CNT</name>
+              <description>Error counter</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>16</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="COMB_PVT_ERR_LVT_SITE0">
+        <register>
           <name>COMB_PVT_ERR_NVT_SITE1</name>
           <description>******* Description ***********</description>
           <addressOffset>0x84</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>ERR_CNT</name>
+              <description>Error counter</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>16</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="COMB_PVT_ERR_LVT_SITE0">
+        <register>
           <name>COMB_PVT_ERR_HVT_SITE1</name>
           <description>******* Description ***********</description>
           <addressOffset>0x88</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>ERR_CNT</name>
+              <description>Error counter</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>16</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="COMB_PVT_ERR_LVT_SITE0">
+        <register>
           <name>COMB_PVT_ERR_LVT_SITE2</name>
           <description>******* Description ***********</description>
           <addressOffset>0x8C</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>ERR_CNT</name>
+              <description>Error counter</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>16</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="COMB_PVT_ERR_LVT_SITE0">
+        <register>
           <name>COMB_PVT_ERR_NVT_SITE2</name>
           <description>******* Description ***********</description>
           <addressOffset>0x90</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>ERR_CNT</name>
+              <description>Error counter</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>16</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="COMB_PVT_ERR_LVT_SITE0">
+        <register>
           <name>COMB_PVT_ERR_HVT_SITE2</name>
           <description>******* Description ***********</description>
           <addressOffset>0x94</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>ERR_CNT</name>
+              <description>Error counter</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>16</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="COMB_PVT_ERR_LVT_SITE0">
+        <register>
           <name>COMB_PVT_ERR_LVT_SITE3</name>
           <description>******* Description ***********</description>
           <addressOffset>0x98</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>ERR_CNT</name>
+              <description>Error counter</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>16</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="COMB_PVT_ERR_LVT_SITE0">
+        <register>
           <name>COMB_PVT_ERR_NVT_SITE3</name>
           <description>******* Description ***********</description>
           <addressOffset>0x9C</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>ERR_CNT</name>
+              <description>Error counter</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>16</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="COMB_PVT_ERR_LVT_SITE0">
+        <register>
           <name>COMB_PVT_ERR_HVT_SITE3</name>
           <description>******* Description ***********</description>
           <addressOffset>0xA0</addressOffset>
+          <size>0x20</size>
+          <fields>
+            <field>
+              <name>ERR_CNT</name>
+              <description>Error counter</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>16</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>version register</description>
           <addressOffset>0xFFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -42645,10 +43319,13 @@ IDINTEN[4]: DU Interrupt.</description>
             </fields>
           </register>
         </cluster>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>system timer version control register</description>
           <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -43207,10 +43884,13 @@ protection is enabled.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>NTIMERS_DATE</name>
           <description>Timer version control register</description>
           <addressOffset>0xF8</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <name>REGCLK</name>
@@ -45282,10 +45962,13 @@ protection is enabled.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>UART Version register</description>
           <addressOffset>0x7C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
         <register>
           <name>ID</name>
@@ -46146,10 +46829,13 @@ protection is enabled.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>UHCI version  control register</description>
           <addressOffset>0x84</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -48830,9 +49516,96 @@ protection is enabled.</description>
               </field>
             </fields>
           </register>
-          <register derivedFrom="USB_FS.IN_EP0.DIEPINT">
+          <register>
             <name>DIEPINT</name>
             <addressOffset>0x8</addressOffset>
+            <size>0x20</size>
+            <fields>
+              <field>
+                <name>XFERCOMPL</name>
+                <bitOffset>0</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>EPDISBLD</name>
+                <bitOffset>1</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>AHBERR</name>
+                <bitOffset>2</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>TIMEOUT</name>
+                <bitOffset>3</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>INTKNTXFEMP</name>
+                <bitOffset>4</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>INTKNEPMIS</name>
+                <bitOffset>5</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>INEPNAKEFF</name>
+                <bitOffset>6</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>TXFEMP</name>
+                <bitOffset>7</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-only</access>
+              </field>
+              <field>
+                <name>TXFIFOUNDRN</name>
+                <bitOffset>8</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>BNAINTR</name>
+                <bitOffset>9</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>PKTDRPSTS</name>
+                <bitOffset>11</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>BBLEERR</name>
+                <bitOffset>12</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>NAKINTRPT</name>
+                <bitOffset>13</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>NYETINTRPT</name>
+                <bitOffset>14</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+            </fields>
           </register>
           <register>
             <name>DIEPTSIZ</name>
@@ -48865,17 +49638,44 @@ protection is enabled.</description>
               </field>
             </fields>
           </register>
-          <register derivedFrom="USB_FS.IN_EP0.DIEPDMA">
+          <register>
             <name>DIEPDMA</name>
             <addressOffset>0x14</addressOffset>
+            <size>0x20</size>
+            <fields>
+              <field>
+                <name>DMAADDR</name>
+                <bitOffset>0</bitOffset>
+                <bitWidth>32</bitWidth>
+                <access>read-write</access>
+              </field>
+            </fields>
           </register>
-          <register derivedFrom="USB_FS.IN_EP0.DIEPDMAB">
+          <register>
             <name>DIEPDMAB</name>
             <addressOffset>0x1C</addressOffset>
+            <size>0x20</size>
+            <fields>
+              <field>
+                <name>DMABUFFERADDR</name>
+                <bitOffset>0</bitOffset>
+                <bitWidth>32</bitWidth>
+                <access>read-only</access>
+              </field>
+            </fields>
           </register>
-          <register derivedFrom="USB_FS.IN_EP0.DTXFSTS">
+          <register>
             <name>DTXFSTS</name>
             <addressOffset>0x18</addressOffset>
+            <size>0x20</size>
+            <fields>
+              <field>
+                <name>INEPTXFSPCAVAIL</name>
+                <bitOffset>0</bitOffset>
+                <bitWidth>16</bitWidth>
+                <access>read-only</access>
+              </field>
+            </fields>
           </register>
         </cluster>
         <cluster>
@@ -49198,9 +49998,96 @@ protection is enabled.</description>
               </field>
             </fields>
           </register>
-          <register derivedFrom="USB_FS.OUT_EP0.DOEPINT">
+          <register>
             <name>DOEPINT</name>
             <addressOffset>0x8</addressOffset>
+            <size>0x20</size>
+            <fields>
+              <field>
+                <name>XFERCOMPL</name>
+                <bitOffset>0</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>EPDISBLD</name>
+                <bitOffset>1</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>AHBERR</name>
+                <bitOffset>2</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>SETUP</name>
+                <bitOffset>3</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>OUTTKNEPDIS</name>
+                <bitOffset>4</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>STSPHSERCVD</name>
+                <bitOffset>5</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>BACK2BACKSETUP</name>
+                <bitOffset>6</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>OUTPKTERR</name>
+                <bitOffset>8</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>BNAINTR</name>
+                <bitOffset>9</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>PKTDRPSTS</name>
+                <bitOffset>11</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>BBLEERR</name>
+                <bitOffset>12</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>NAKINTRPT</name>
+                <bitOffset>13</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>NYEPINTRPT</name>
+                <bitOffset>14</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+              <field>
+                <name>STUPPKTRCVD</name>
+                <bitOffset>15</bitOffset>
+                <bitWidth>1</bitWidth>
+                <access>read-write</access>
+              </field>
+            </fields>
           </register>
           <register>
             <name>DOEPTSIZ</name>
@@ -49245,13 +50132,31 @@ protection is enabled.</description>
               </field>
             </fields>
           </register>
-          <register derivedFrom="USB_FS.OUT_EP0.DOEPDMA">
+          <register>
             <name>DOEPDMA</name>
             <addressOffset>0x14</addressOffset>
+            <size>0x20</size>
+            <fields>
+              <field>
+                <name>DMAADDR</name>
+                <bitOffset>0</bitOffset>
+                <bitWidth>32</bitWidth>
+                <access>read-write</access>
+              </field>
+            </fields>
           </register>
-          <register derivedFrom="USB_FS.OUT_EP0.DOEPDMAB">
+          <register>
             <name>DOEPDMAB</name>
             <addressOffset>0x1C</addressOffset>
+            <size>0x20</size>
+            <fields>
+              <field>
+                <name>DMABUFFERADDR</name>
+                <bitOffset>0</bitOffset>
+                <bitWidth>32</bitWidth>
+                <access>read-write</access>
+              </field>
+            </fields>
           </register>
         </cluster>
         <register>
@@ -50278,10 +51183,13 @@ protection is enabled.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version control register</description>
           <addressOffset>0x80</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -50516,10 +51424,13 @@ protection is enabled.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>Version Control Register</description>
           <addressOffset>0x3FC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
@@ -51019,10 +51930,13 @@ protection is enabled.</description>
             </field>
           </fields>
         </register>
-        <register derivedFrom="AES.DATE">
+        <register>
           <name>DATE</name>
           <description>XTS-AES version control register</description>
           <addressOffset>0x5C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
         </register>
       </registers>
     </peripheral>
