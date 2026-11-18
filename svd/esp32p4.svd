@@ -113616,7 +113616,7 @@ protection is enabled.</description>
               <access>read-write</access>
             </field>
             <field>
-              <name>ACCEPTANCE_FILTER_MODE</name>
+              <name>RX_FILTER_MODE</name>
               <description>1:single, the single acceptance filter option is enabled (one filter with the length of 32 bit is active). 0:dual, the dual acceptance filter option is enabled (two filters, each with the length of 16 bit are active).</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
@@ -113631,7 +113631,7 @@ protection is enabled.</description>
           <size>0x20</size>
           <fields>
             <field>
-              <name>TX_REQUEST</name>
+              <name>TX_REQ</name>
               <description>1: present, a message shall be transmitted. 0: absent</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
@@ -113645,7 +113645,7 @@ protection is enabled.</description>
               <access>write-only</access>
             </field>
             <field>
-              <name>RELEASE_BUFFER</name>
+              <name>RELEASE_BUF</name>
               <description>1: released, the receive buffer, representing the message memory space in the RXFIFO is released. 0: no action</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
@@ -113659,7 +113659,7 @@ protection is enabled.</description>
               <access>write-only</access>
             </field>
             <field>
-              <name>SELF_RX_REQUEST</name>
+              <name>SELF_RX_REQ</name>
               <description>1: present, a message shall be transmitted and received simultaneously. 0: absent.</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
@@ -113674,7 +113674,7 @@ protection is enabled.</description>
           <size>0x20</size>
           <fields>
             <field>
-              <name>RECEIVE_BUFFER</name>
+              <name>RX_BUF_ST</name>
               <description>1: full, one or more complete messages are available in the RXFIFO. 0: empty, no message is available</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
@@ -113688,7 +113688,7 @@ protection is enabled.</description>
               <access>read-only</access>
             </field>
             <field>
-              <name>TRANSMIT_BUFFER</name>
+              <name>TX_BUF_ST</name>
               <description>1: released, the CPU may write a message into the transmit buffer. 0: locked, the CPU cannot access the transmit buffer, a message is either waiting for transmission or is in the process of being transmitted</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
@@ -113716,21 +113716,21 @@ protection is enabled.</description>
               <access>read-only</access>
             </field>
             <field>
-              <name>ERR</name>
+              <name>ERR_ST</name>
               <description>1: error, at least one of the error counters has reached or exceeded the CPU warning limit defined by the Error Warning Limit Register (EWLR). 0: ok, both error counters are below the warning limit</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
             </field>
             <field>
-              <name>NODE_BUS_OFF</name>
+              <name>BUS_OFF_ST</name>
               <description>1: bus-off, the TWAI controller is not involved in bus activities. 0: bus-on, the TWAI controller is involved in bus activities</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
             </field>
             <field>
-              <name>MISS</name>
+              <name>MISS_ST</name>
               <description>1: current message is destroyed because of FIFO overflow.</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
@@ -113739,34 +113739,34 @@ protection is enabled.</description>
           </fields>
         </register>
         <register>
-          <name>INTERRUPT</name>
+          <name>INT_RAW</name>
           <description>Interrupt signals' register.</description>
           <addressOffset>0xC</addressOffset>
           <size>0x20</size>
           <fields>
             <field>
-              <name>RECEIVE_INT_ST</name>
+              <name>RX_INT_ST</name>
               <description>1: this bit is set while the receive FIFO is not empty and the RIE bit is set within the interrupt enable register. 0: reset</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
             </field>
             <field>
-              <name>TRANSMIT_INT_ST</name>
+              <name>TX_INT_ST</name>
               <description>1: this bit is set whenever the transmit buffer status changes from '0-to-1' (released) and the TIE bit is set within the interrupt enable register. 0: reset</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
             </field>
             <field>
-              <name>ERR_WARNING_INT_ST</name>
+              <name>ERR_WARN_INT_ST</name>
               <description>1: this bit is set on every change (set and clear) of either the error status or bus status bits and the EIE bit is set within the interrupt enable register. 0: reset</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
             </field>
             <field>
-              <name>DATA_OVERRUN_INT_ST</name>
+              <name>OVERRUN_INT_ST</name>
               <description>1: this bit is set on a '0-to-1' transition of the data overrun status bit and the DOIE bit is set within the interrupt enable register. 0: reset</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
@@ -113787,7 +113787,7 @@ protection is enabled.</description>
               <access>read-only</access>
             </field>
             <field>
-              <name>ARBITRATION_LOST_INT_ST</name>
+              <name>ARB_LOST_INT_ST</name>
               <description>1: this bit is set when the TWAI controller lost the arbitration and becomes a receiver and the ALIE bit is set within the interrupt enable register. 0: reset</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
@@ -113810,34 +113810,34 @@ protection is enabled.</description>
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_ENABLE</name>
+          <name>INT_ENA</name>
           <description>Interrupt enable register.</description>
           <addressOffset>0x10</addressOffset>
           <size>0x20</size>
           <fields>
             <field>
-              <name>EXT_RECEIVE_INT_ENA</name>
+              <name>RX_INT_ENA</name>
               <description>1: enabled, when the receive buffer status is 'full' the TWAI controller requests the respective interrupt. 0: disable</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>EXT_TRANSMIT_INT_ENA</name>
+              <name>TX_INT_ENA</name>
               <description>1: enabled, when a message has been successfully transmitted or the transmit buffer is accessible again (e.g. after an abort transmission command), the TWAI controller requests the respective interrupt. 0: disable</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>EXT_ERR_WARNING_INT_ENA</name>
+              <name>ERR_WARN_INT_ENA</name>
               <description>1: enabled, if the error or bus status change (see status register. Table 14), the TWAI controllerrequests the respective interrupt. 0: disable</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>EXT_DATA_OVERRUN_INT_ENA</name>
+              <name>OVERRUN_INT_ENA</name>
               <description>1: enabled, if the data overrun status bit is set (see status register. Table 14), the TWAI controllerrequests the respective interrupt. 0: disable</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
@@ -113858,7 +113858,7 @@ protection is enabled.</description>
               <access>read-write</access>
             </field>
             <field>
-              <name>ARBITRATION_LOST_INT_ENA</name>
+              <name>ARB_LOST_INT_ENA</name>
               <description>1: enabled, if the TWAI controller has lost arbitration, the respective interrupt is requested. 0: disable</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
@@ -113909,21 +113909,21 @@ protection is enabled.</description>
           <size>0x20</size>
           <fields>
             <field>
-              <name>TIME_SEGMENT1</name>
+              <name>TIME_SEG1</name>
               <description>The number of clock cycles in TSEG1 per bit timing. Software has R/W permission in reset mode and RO in operation mode.</description>
               <bitOffset>0</bitOffset>
               <bitWidth>4</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>TIME_SEGMENT2</name>
+              <name>TIME_SEG2</name>
               <description>The number of clock cycles in TSEG2 per bit timing. Software has R/W permission in reset mode and RO in operation mode.</description>
               <bitOffset>4</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>TIME_SAMPLING</name>
+              <name>TIME_SAMP</name>
               <description>1: triple, the bus is sampled three times. 0: single, the bus is sampled once. Software has R/W permission in reset mode and RO in operation mode.</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
@@ -113960,7 +113960,7 @@ protection is enabled.</description>
               <access>read-only</access>
             </field>
             <field>
-              <name>ERR_CAPTURE_CODE_DIRECTION</name>
+              <name>ECC_DIRECTION</name>
               <description>1: RX, error occurred during reception. 0: TX, error occurred during transmission.</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
@@ -114040,7 +114040,7 @@ protection is enabled.</description>
           </fields>
         </register>
         <register>
-          <name>RX_MESSAGE_COUNTER</name>
+          <name>RX_MESSAGE_CNT</name>
           <description>Received message counter register.</description>
           <addressOffset>0x74</addressOffset>
           <size>0x20</size>

@@ -132957,6 +132957,86 @@ in both. Transceiver as well as receiver.</description>
           </fields>
         </register>
         <register>
+          <dim>20</dim>
+          <dimIncrement>0x4</dimIncrement>
+          <dimIndex>0-19</dimIndex>
+          <name>TXTB1_DATA%s</name>
+          <description>TX buffer 1 frame memory word</description>
+          <addressOffset>0x100</addressOffset>
+          <size>0x20</size>
+          <access>write-only</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>DATA</name>
+              <description>Frame buffer word</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>write-only</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <dim>20</dim>
+          <dimIncrement>0x4</dimIncrement>
+          <dimIndex>0-19</dimIndex>
+          <name>TXTB2_DATA%s</name>
+          <description>TX buffer 2 frame memory word</description>
+          <addressOffset>0x200</addressOffset>
+          <size>0x20</size>
+          <access>write-only</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>DATA</name>
+              <description>Frame buffer word</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>write-only</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <dim>20</dim>
+          <dimIncrement>0x4</dimIncrement>
+          <dimIndex>0-19</dimIndex>
+          <name>TXTB3_DATA%s</name>
+          <description>TX buffer 3 frame memory word</description>
+          <addressOffset>0x300</addressOffset>
+          <size>0x20</size>
+          <access>write-only</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>DATA</name>
+              <description>Frame buffer word</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>write-only</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <dim>20</dim>
+          <dimIncrement>0x4</dimIncrement>
+          <dimIndex>0-19</dimIndex>
+          <name>TXTB4_DATA%s</name>
+          <description>TX buffer 4 frame memory word</description>
+          <addressOffset>0x400</addressOffset>
+          <size>0x20</size>
+          <access>write-only</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>DATA</name>
+              <description>Frame buffer word</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>write-only</access>
+            </field>
+          </fields>
+        </register>
+        <register>
           <name>TIMER_CLK_EN</name>
           <description>TWAIFD timer clock force enable register.</description>
           <addressOffset>0xFD4</addressOffset>
