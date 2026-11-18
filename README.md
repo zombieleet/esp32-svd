@@ -33,6 +33,8 @@ For each chip, `make` then does the following:
 
 `flatten` stops with an error on anything it does not support, such as a `derivedFrom` chain. If that happens after an update, extend `flatten/main.go` or add a patch in `tinygo/`.
 
+Run `./check.sh path/to/tinygo` to check that every SVD file gives a device file that builds. CI runs the same check with TinyGo `dev`.
+
 Please ensure that the ESP targets supported by TinyGo can still be built:
 
  1. Regenerate device files from the updated SVD files: `make gen-device-esp`

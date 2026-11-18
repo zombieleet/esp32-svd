@@ -1,0 +1,38 @@
+name: Check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          submodules: true
+      - uses: actions/checkout@v6
+        with:
+          repository: tinygo-org/tinygo
+          ref: dev
+          path: tinygo-dev
+          sparse-checkout: |
+            tools/gen-device-svd
+            src/runtime/volatile
+      - uses: actions/setup-go@v6
+        with:
+          go-version-file: tinygo-dev/go.mod
+          cache: false
+      - name: Install svdtools
+        run: |
+          mkdir -p "$RUNNER_TEMP/bin"
+          curl -fsSL https://github.com/rust-embedded/svdtools/releases/download/v0.5.0/svdtools-x86_64-unknown-linux-gnu.gz | gunzip > "$RUNNER_TEMP/bin/svdtools"
+          chmod +x "$RUNNER_TEMP/bin/svdtools"
+          echo "$RUNNER_TEMP/bin" >> "$GITHUB_PATH"
+      - name: Check that the SVD files are up to date
+        run: |
+          make
+          git diff --exit-code -- svd
+      - name: Check that the device files build
+        run: ./check.sh tinygo-dev
